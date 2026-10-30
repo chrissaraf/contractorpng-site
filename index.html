@@ -4,42 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contractor PNG</title>
-<meta name="description" content="Contractor PNG — Συντήρηση, επισκευή και αναβάθμιση κτιρίων: επισκευές φέροντος, στεγανοποιήσεις, θερμοπροσόψεις, ανακαινίσεις.">
+<meta name="description" content="Contractor PNG: συντήρηση, επισκευή και αναβάθμιση κτιρίων σε Αθήνα, Αττική και Κυκλάδες. Επισκευές όψεων και φέροντος, στεγανώσεις, θερμοπρόσοψη, ανακαινίσεις, πέτρινες κατοικίες.">
 <link rel="canonical" href="https://contractorpng.gr/">
-<!-- ΔΕΙΓΜΑ: noindex μέχρι να μπουν τα πραγματικά στοιχεία. Βγαίνει μαζί με τη μπάρα .demo-bar και το robots.txt. -->
+<!-- ΔΕΙΓΜΑ: noindex μέχρι να μπουν τα πραγματικά στοιχεία επικοινωνίας. Βγαίνει μαζί με τη μπάρα .demo-bar και το robots.txt. -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#1B1919">
+<meta name="theme-color" content="#FFFFFF">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="el_GR">
 <meta property="og:site_name" content="Contractor PNG">
 <meta property="og:title" content="Contractor PNG · Συντήρηση, επισκευή και αναβάθμιση κτιρίων">
-<meta property="og:description" content="Επισκευές φέροντος, στεγανοποιήσεις, ενεργειακή αναβάθμιση, όψεις και ανακαινίσεις.">
+<meta property="og:description" content="Επισκευές όψεων και φέροντος, στεγανώσεις, θερμοπρόσοψη, ανακαινίσεις και πέτρινες κατοικίες σε Αττική και Κυκλάδες.">
 <meta property="og:url" content="https://contractorpng.gr/">
 <meta property="og:image" content="https://contractorpng.gr/assets/logo-original.png">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon-180.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"GeneralContractor","name":"Contractor PNG","url":"https://contractorpng.gr/","logo":"https://contractorpng.gr/assets/logo-original.png","description":"Συντήρηση, επισκευή και αναβάθμιση κτιρίων.","areaServed":"GR"}
+{"@context":"https://schema.org","@type":"GeneralContractor","name":"Contractor PNG","url":"https://contractorpng.gr/","logo":"https://contractorpng.gr/assets/logo-original.png","description":"Συντήρηση, επισκευή και αναβάθμιση κτιρίων σε Αθήνα, Αττική και Κυκλάδες.","founder":{"@type":"Person","name":"Δημήτρης Γαβριήλ","jobTitle":"General Contractor"},"areaServed":[{"@type":"AdministrativeArea","name":"Αττική"},{"@type":"Place","name":"Σέριφος"},{"@type":"Place","name":"Σίφνος"},{"@type":"Place","name":"Αίγινα"}]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: technical-drawing grid. Graphite bands alternate with concrete bands; dimension lines and section labels act as the structure. */
+/* Layout: technical-drawing grid on light concrete. Colors come from the logo: black #1B1919, grey #8A8B89, white. */
 :root{
-  /* Χρώματα από το λογότυπο: μαύρο #1B1919, γκρι #8A8B89, λευκό. */
-  --concrete:#EDEDEC;
-  --paper:#F8F8F7;
-  --ink:#1B1919;
-  --ink-2:#555553;
-  --line:#CDCDCB;
-  --signal:#8A8B89;
-  --signal-ink:#1B1919;
+  --bg:#EFEFED;        /* σελίδα: ανοιχτό μπετόν */
+  --paper:#F8F8F7;     /* εναλλασσόμενες ζώνες */
+  --card:#FFFFFF;      /* κεφαλίδα, κάρτες */
+  --soft:#E4E4E1;      /* ζώνη διαδικασίας */
+  --ink:#1B1919;       /* μαύρο λογοτύπου, μόνο για κείμενο και γραμμές */
+  --ink-2:#5C5B59;
+  --grey:#8A8B89;      /* γκρι λογοτύπου */
+  --grey-ink:#666765;  /* γκρι για μικρό κείμενο (AA) */
+  --line:#D6D6D3;
+  --grid:#E2E2DF;
   --btn:#1B1919;
   --btn-ink:#FFFFFF;
-  --band:#1B1919;
-  --band-fg:#F2F2F1;
-  --band-muted:#A3A3A1;
-  --band-line:#3A3838;
+  --foot:#3B3A39;
+  --foot-fg:#ECECEA;
+  --foot-muted:#B9B9B6;
   --display:"Fira Sans Extra Condensed","Arial Narrow",system-ui,sans-serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -48,53 +49,53 @@
   --gut-r:max(16px, env(safe-area-inset-right,0px));
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --concrete:#121111;--paper:#1A1919;--ink:#EDEDEC;--ink-2:#A9A9A7;--line:#333131;
-  --signal:#8A8B89;--signal-ink:#121111;--btn:#F2F2F1;--btn-ink:#1B1919;--band:#0C0B0B;--band-fg:#F2F2F1;--band-muted:#A3A3A1;--band-line:#2E2C2C;color-scheme:dark}}
+  --bg:#1E1D1D;--paper:#252424;--card:#2A2929;--soft:#2A2929;--ink:#ECECEA;--ink-2:#B3B3B0;--grey:#8A8B89;--grey-ink:#A6A7A4;
+  --line:#3B3A39;--grid:#2F2E2E;--btn:#ECECEA;--btn-ink:#1B1919;--foot:#161515;--foot-fg:#ECECEA;--foot-muted:#A6A7A4;color-scheme:dark}}
 :root[data-theme="dark"]{
-  --concrete:#121111;--paper:#1A1919;--ink:#EDEDEC;--ink-2:#A9A9A7;--line:#333131;
-  --signal:#8A8B89;--signal-ink:#121111;--btn:#F2F2F1;--btn-ink:#1B1919;--band:#0C0B0B;--band-fg:#F2F2F1;--band-muted:#A3A3A1;--band-line:#2E2C2C;color-scheme:dark}
+  --bg:#1E1D1D;--paper:#252424;--card:#2A2929;--soft:#2A2929;--ink:#ECECEA;--ink-2:#B3B3B0;--grey:#8A8B89;--grey-ink:#A6A7A4;
+  --line:#3B3A39;--grid:#2F2E2E;--btn:#ECECEA;--btn-ink:#1B1919;--foot:#161515;--foot-fg:#ECECEA;--foot-muted:#A6A7A4;color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-padding-top:96px}
-body{margin:0;background:var(--concrete);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--band)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
 a{color:inherit}
+img{max-width:100%}
 h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.95;letter-spacing:-.01em;text-wrap:balance;margin:0}
 p{margin:0}
 .wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gut-l);padding-right:var(--gut-r)}
-.label{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
-.band .label,.hero .label,.process .label{color:var(--band-muted)}
-:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+.label{font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--grey-ink)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 
-.demo-bar{background:var(--signal);color:var(--signal-ink);font:500 12px/1.4 var(--mono);text-align:center;padding-block:6px}
+.demo-bar{background:var(--soft);color:var(--ink-2);font:500 12px/1.4 var(--mono);text-align:center;padding:6px var(--gut-r) 6px var(--gut-l)}
 
 /* Header */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--band);color:var(--band-fg);border-bottom:1px solid var(--band-line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:14px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:12px}
 .brand{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none}
-.brand-mark{height:34px;width:auto;flex:none;display:block}
+.brand picture{display:block;flex:none}
+.brand-mark{height:36px;width:auto;display:block}
 .brand-name{font:800 22px/1 var(--display);letter-spacing:.02em;text-transform:uppercase}
-.brand-name small{display:block;font:500 10px/1.3 var(--mono);letter-spacing:.14em;color:var(--band-muted);margin-top:3px}
+.brand-name small{display:block;font:500 10px/1.3 var(--mono);letter-spacing:.14em;color:var(--grey-ink);margin-top:3px}
 .nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14px}
-.nav ul a{text-decoration:none;opacity:.85;display:inline-flex;align-items:center;min-height:44px}
-.nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.nav ul a{text-decoration:none;color:var(--ink-2);display:inline-flex;align-items:center;min-height:44px}
+.nav ul a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
 .btn{min-height:44px;display:inline-flex;align-items:center;gap:10px;font:600 15px/1 var(--body);text-decoration:none;padding:14px 20px;border:0;cursor:pointer;background:var(--btn);color:var(--btn-ink)}
-.btn:hover{filter:brightness(1.15)}
-header .btn,.hero .btn:not(.btn-ghost){background:var(--band-fg);color:var(--band)}
-header .btn:hover,.hero .btn:not(.btn-ghost):hover{filter:none;background:#FFFFFF}
-.btn-ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px currentColor}
+.btn:hover{background:var(--ink-2)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn-ghost:hover{background:var(--soft)}
 .nav .btn{padding:11px 16px;font-size:14px}
-.menu-btn{display:none;min-width:44px;min-height:44px;background:transparent;border:1px solid var(--band-line);color:inherit;cursor:pointer;place-items:center}
+.nav .btn .short{display:none}
+.menu-btn{display:none;min-width:44px;min-height:44px;background:transparent;border:1px solid var(--line);color:var(--ink);cursor:pointer;place-items:center}
 .menu-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8}
 @media (max-width:900px){
   .nav{flex-wrap:wrap;gap:12px}
   .nav .brand{margin-right:auto}
   .menu-btn{display:grid}
-  .nav ul{display:none;order:9;flex-basis:100%;flex-direction:column;gap:0;border-top:1px solid var(--band-line)}
+  .nav ul{display:none;order:9;flex-basis:100%;flex-direction:column;gap:0;border-top:1px solid var(--line)}
   .nav.open ul{display:flex}
-  .nav ul a{width:100%;font-size:16px;border-bottom:1px solid var(--band-line)}
+  .nav ul a{width:100%;font-size:16px;color:var(--ink);border-bottom:1px solid var(--line)}
 }
-.nav .btn .short{display:none}
 @media (max-width:480px){
   .nav{gap:8px}
   .brand{gap:10px}
@@ -107,29 +108,35 @@ header .btn:hover,.hero .btn:not(.btn-ghost):hover{filter:none;background:#FFFFF
 }
 
 /* Hero */
-.hero{background:var(--band);color:var(--band-fg);overflow:hidden}
+.hero{background:var(--paper);border-bottom:1px solid var(--line);overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:end;padding-block:72px 0}
 .hero h1{font-size:clamp(52px,8.4vw,112px);text-transform:uppercase}
-.hero h1 em{font-style:normal;color:var(--signal)}
-.hero-lead{max-width:30em;font-size:18px;color:#CFCFCD;margin-top:28px}
+.hero h1 em{font-style:normal;color:var(--grey)}
+.hero-lead{max-width:31em;font-size:18px;color:var(--ink-2);margin-top:28px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
 .hero-copy{padding-bottom:72px;min-width:0}
-.drawing{position:relative;min-width:0;align-self:stretch;display:flex;align-items:flex-end}
+.drawing{min-width:0;align-self:stretch;display:flex;align-items:flex-end}
 .drawing svg{width:100%;height:auto;display:block}
-.stats{border-top:1px solid var(--band-line)}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{padding-block:26px;padding-right:16px;border-right:1px solid var(--band-line)}
+.dw-grid{stroke:var(--grid)}
+.dw-main{stroke:var(--ink)}
+.dw-sub{stroke:var(--grey)}
+.dw-fill{fill:var(--grey)}
+.dw-text{fill:var(--grey-ink);font-family:var(--mono);font-size:11px}
+.stats{border-top:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding-block:26px;padding-right:16px;border-right:1px solid var(--line);min-width:0}
 .stat + .stat{padding-left:24px}
 .stat:last-child{border-right:0}
 .stat b{display:block;font:800 clamp(34px,4vw,48px)/1 var(--display);font-variant-numeric:tabular-nums}
-.stat b sup{font-size:.45em;color:var(--signal);margin-left:2px}
+.stat b sup{font-size:.45em;color:var(--grey);margin-left:2px}
 @media (max-width:900px){
   .hero-grid{grid-template-columns:1fr;padding-top:48px;gap:8px}
   .hero-copy{padding-bottom:16px}
-  .stats .wrap{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:0}
-  .stat:nth-child(3){padding-left:0}
-  .stat:nth-child(n+3){border-top:1px solid var(--band-line)}
+}
+@media (max-width:620px){
+  .stats .wrap{grid-template-columns:1fr}
+  .stat,.stat + .stat{padding:18px 0;border-right:0}
+  .stat + .stat{border-top:1px solid var(--line)}
 }
 
 /* Section scaffolding */
@@ -142,50 +149,51 @@ section{padding-block:96px}
 
 /* Services */
 .services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.svc{padding:32px 28px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0;background:var(--concrete);transition:background .2s}
-.svc:hover{background:var(--paper)}
-.svc .code{font:500 12px/1 var(--mono);color:var(--ink-2);display:flex;justify-content:space-between}
+.svc{padding:32px 28px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0;background:var(--bg);transition:background .2s}
+.svc:hover{background:var(--card)}
+.svc .code{font:500 12px/1 var(--mono);color:var(--grey-ink);display:flex;justify-content:space-between;gap:12px}
 .svc svg{width:44px;height:44px;stroke:var(--ink);fill:none;stroke-width:1.6}
 .svc h3{font-size:30px;text-transform:uppercase}
 .svc p{color:var(--ink-2);font-size:15px}
 .svc ul{margin:4px 0 0;padding:0;list-style:none;font-size:14px;display:grid;gap:6px}
 .svc li{display:flex;gap:10px}
-.svc li::before{content:"";width:10px;height:1px;background:var(--ink);margin-top:11px;flex:none}
+.svc li::before{content:"";width:10px;height:1px;background:var(--grey);margin-top:11px;flex:none}
 @media (max-width:980px){.services{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.services{grid-template-columns:1fr}}
 
 /* Projects */
-.projects{background:var(--paper)}
+.projects{background:var(--paper);border-block:1px solid var(--line)}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
 .filters button{min-height:44px;font:500 13px/1 var(--mono);letter-spacing:.04em;padding:10px 14px;background:transparent;color:var(--ink);border:1px solid var(--line);cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px}
 .proj{min-width:0;display:flex;flex-direction:column;gap:14px}
 .proj.wide{grid-column:span 2}
-.ph{position:relative;aspect-ratio:4/3;max-width:100%;background:var(--band);overflow:hidden}
+.ph{position:relative;aspect-ratio:4/3;max-width:100%;background:var(--card);border:1px solid var(--line);overflow:hidden}
 .proj.wide .ph{aspect-ratio:auto;height:100%;min-height:260px}
 .ph canvas{position:absolute;inset:0;width:100%;height:100%}
-.ph .tag{position:absolute;left:12px;top:12px;font:500 11px/1 var(--mono);letter-spacing:.08em;background:var(--signal);color:var(--signal-ink);padding:6px 8px}
-.ph .note{position:absolute;right:12px;bottom:12px;font:400 11px/1 var(--mono);color:var(--band-muted)}
-.proj-meta{display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:12px}
+.ph .tag{position:absolute;left:12px;top:12px;font:500 11px/1 var(--mono);letter-spacing:.08em;background:var(--ink);color:var(--card);padding:6px 8px}
+.ph .note{position:absolute;right:12px;bottom:12px;font:400 11px/1 var(--mono);color:var(--grey-ink)}
+.proj-meta{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:12px}
 .proj h3{font-size:26px;text-transform:uppercase}
-.proj dl{display:grid;grid-template-columns:auto auto;gap:2px 14px;margin:0;font:400 12px/1.5 var(--mono);color:var(--ink-2);text-align:right;flex:none}
-.proj dt{color:var(--ink-2);opacity:.7}
-.proj dd{margin:0;font-variant-numeric:tabular-nums}
+.proj p{font-size:14px;color:var(--ink-2)}
+.proj .where{display:flex;justify-content:space-between;gap:12px}
 @media (max-width:980px){.proj-grid{grid-template-columns:repeat(2,1fr)}.proj.wide{grid-column:span 2}}
 @media (max-width:620px){.proj-grid{grid-template-columns:1fr}.proj.wide{grid-column:auto}.proj.wide .ph{aspect-ratio:4/3;height:auto;min-height:0}}
+.areas{margin-top:56px;display:grid;grid-template-columns:220px 1fr;gap:32px;border-top:1px solid var(--line);padding-top:24px}
+.areas ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--ink-2)}
+.areas li b{color:var(--ink);font-weight:600}
+@media (max-width:760px){.areas{grid-template-columns:1fr;gap:12px}}
 
 /* Process */
-.process{background:var(--band);color:var(--band-fg)}
-.process .sec-tag{border-color:var(--band-fg)}
-.process .sec-head p{color:var(--band-muted)}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);position:relative;counter-reset:s}
-.steps::before{content:"";position:absolute;left:0;right:0;top:22px;height:1px;background:var(--band-line)}
+.process{background:var(--soft)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);position:relative;list-style:none;margin:0;padding:0}
+.steps::before{content:"";position:absolute;left:0;right:0;top:22px;height:1px;background:var(--grey)}
 .step{position:relative;padding-right:20px;min-width:0}
-.step .n{width:44px;height:44px;display:grid;place-items:center;background:var(--band);border:1px solid var(--signal);color:var(--signal);font:500 14px/1 var(--mono);position:relative}
+.step .n{width:44px;height:44px;display:grid;place-items:center;background:var(--soft);border:1px solid var(--ink);color:var(--ink);font:500 14px/1 var(--mono);position:relative}
 .step h3{font-size:24px;text-transform:uppercase;margin-top:22px}
-.step p{font-size:14px;color:var(--band-muted);margin-top:10px}
-.step .dur{font:400 12px/1 var(--mono);color:var(--signal);margin-top:14px;display:block}
+.step p{font-size:14px;color:var(--ink-2);margin-top:10px}
+.step .out{font:400 12px/1.4 var(--mono);color:var(--grey-ink);margin-top:14px;display:block}
 @media (max-width:900px){
   .steps{grid-template-columns:1fr;gap:28px}
   .steps::before{left:22px;right:auto;top:0;bottom:0;width:1px;height:auto}
@@ -195,19 +203,32 @@ section{padding-block:96px}
   .step .n{grid-row:span 3}
 }
 
-/* Credentials */
+/* Company */
 .creds{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
 .creds-copy p{color:var(--ink-2);font-size:17px;max-width:34em}
 .creds-copy p + p{margin-top:16px}
+.clients{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
+.clients span{font:500 13px/1 var(--mono);padding:10px 12px;border:1px solid var(--line);background:var(--card)}
 .badges{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.badge{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-width:0}
+.badge{padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-width:0;background:var(--card)}
 .badge b{display:block;font:700 26px/1 var(--display);text-transform:uppercase}
 .badge span{display:block;margin-top:8px;font-size:13px;color:var(--ink-2)}
 .quote-ph{margin-top:32px;border:1px dashed var(--line);padding:22px;font-size:14px;color:var(--ink-2)}
 @media (max-width:860px){.creds{grid-template-columns:1fr;gap:36px}}
+@media (max-width:420px){.badges{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{background:var(--paper);border-top:1px solid var(--line)}
+.faq-list{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:56px;padding-block:14px;font:600 18px/1.35 var(--body)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 24px/1 var(--mono);color:var(--grey-ink);flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding-bottom:20px;max-width:46em;color:var(--ink-2)}
 
 /* Contact */
-.contact{background:var(--paper);border-top:1px solid var(--line)}
+.contact{border-top:1px solid var(--line)}
 .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
 .info{display:grid;gap:22px;align-content:start}
 .info div{border-top:1px solid var(--line);padding-top:12px}
@@ -216,30 +237,34 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .field{display:grid;gap:6px;min-width:0}
 .field.full{grid-column:1/-1}
 .field label{font:500 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
-input,select,textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:var(--concrete);border:1px solid var(--line);padding:13px 14px;width:100%;border-radius:0}
+input,select,textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:var(--card);border:1px solid var(--grey);padding:13px 14px;width:100%;border-radius:0;min-height:48px}
 textarea{min-height:120px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--signal);outline-offset:0;border-color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--ink);outline-offset:0}
 .form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .form-foot small{color:var(--ink-2);font-size:13px}
-.sent{grid-column:1/-1;background:var(--ink);color:var(--paper);padding:16px;font-size:15px}
+.sent{grid-column:1/-1;background:var(--soft);color:var(--ink);padding:16px;font-size:15px}
 @media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:40px}}
 @media (max-width:520px){form{grid-template-columns:1fr}}
 
-footer{background:var(--band);color:var(--band-muted);font-size:13px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;padding-block:28px}
+footer{background:var(--foot);color:var(--foot-muted);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;padding-block:28px}
+footer .who{display:grid;gap:2px}
+footer .who b{font:700 18px/1.2 var(--display);letter-spacing:.02em;color:var(--foot-fg)}
 footer .mono{font-family:var(--mono);font-size:12px}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-
 </head>
 <body>
-<div class="demo-bar">ΔΕΙΓΜΑ ΣΧΕΔΙΟΥ · ό,τι είναι σε [αγκύλες] περιμένει τα πραγματικά στοιχεία της εταιρίας</div>
+<div class="demo-bar">ΔΕΙΓΜΑ ΣΧΕΔΙΟΥ · ό,τι είναι σε [αγκύλες] περιμένει τα στοιχεία της εταιρίας</div>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Αρχική">
-      <img class="brand-mark" src="assets/mark-white.png" alt="" width="153" height="94">
+    <a class="brand" href="#top" aria-label="Contractor PNG, αρχική">
+      <picture>
+        <source srcset="assets/mark-white.png" media="(prefers-color-scheme: dark)">
+        <img class="brand-mark" src="assets/mark-dark.png" alt="" width="157" height="96">
+      </picture>
       <span class="brand-name">Contractor PNG<small>ΣΥΝΤΗΡΗΣΗ · ΕΠΙΣΚΕΥΗ · ΑΝΑΒΑΘΜΙΣΗ</small></span>
     </a>
     <ul id="nav-links">
@@ -247,6 +272,7 @@ footer .mono{font-family:var(--mono);font-size:12px}
       <li><a href="#projects">Έργα</a></li>
       <li><a href="#process">Διαδικασία</a></li>
       <li><a href="#company">Εταιρία</a></li>
+      <li><a href="#faq">Ερωτήσεις</a></li>
     </ul>
     <a class="btn" href="#contact"><span class="full">Ζητήστε προσφορά</span><span class="short">Προσφορά</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Μενού"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16"/></svg></button>
@@ -257,9 +283,9 @@ footer .mono{font-family:var(--mono);font-size:12px}
   <div class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="label">Συντήρηση · Επισκευή · Αναβάθμιση κτιρίων</p>
+        <p class="label">Αθήνα · Αττική · Κυκλάδες</p>
         <h1 style="margin-top:18px">Δίνουμε<br><em>νέα ζωή</em><br>στο κτίριό<br>σας.</h1>
-        <p class="hero-lead">Επισκευές φέροντος, στεγανοποιήσεις, θερμοπροσόψεις και ανακαινίσεις για πολυκατοικίες, κατοικίες και επαγγελματικούς χώρους. Ένας υπεύθυνος για όλο το έργο, γραπτή προσφορά ανά εργασία και σταθερό χρονοδιάγραμμα.</p>
+        <p class="hero-lead">Επισκευές όψεων και φέροντος, στεγανώσεις, θερμοπροσόψεις και ανακαινίσεις για κατοικίες, πολυκατοικίες και επαγγελματικούς χώρους. Αναλυτική προσφορά ανά εργασία και ένας υπεύθυνος από την αυτοψία ως την παράδοση.</p>
         <div class="hero-cta">
           <a class="btn" href="#contact">Ζητήστε προσφορά <span aria-hidden="true">→</span></a>
           <a class="btn btn-ghost" href="#projects">Δείτε τα έργα μας</a>
@@ -267,57 +293,43 @@ footer .mono{font-family:var(--mono);font-size:12px}
       </div>
       <div class="drawing" aria-hidden="true">
         <svg viewBox="0 0 520 470" fill="none" stroke-linecap="square">
-          <g stroke="#3A3838" stroke-width="1">
-            <path d="M0 40H520M0 120H520M0 200H520M0 280H520M0 360H520M60 0V470M160 0V470M260 0V470M360 0V470M460 0V470"/>
-          </g>
-          <!-- ground -->
-          <path d="M20 440H500" stroke="#F2F2F1" stroke-width="2"/>
-          <path d="M20 452H500" stroke="#F2F2F1" stroke-width="1" stroke-dasharray="3 6"/>
-          <!-- building section -->
-          <g stroke="#F2F2F1" stroke-width="1.6">
+          <path class="dw-grid" stroke-width="1" d="M0 40H520M0 120H520M0 200H520M0 280H520M0 360H520M60 0V470M160 0V470M260 0V470M360 0V470M460 0V470"/>
+          <path class="dw-main" stroke-width="2" d="M20 440H500"/>
+          <path class="dw-sub" stroke-width="1" stroke-dasharray="3 6" d="M20 452H500"/>
+          <g class="dw-main" stroke-width="1.6">
             <path d="M110 440V120H400V440"/>
             <path d="M110 120L255 62L400 120"/>
-            <path d="M110 200H400M110 280H400M110 360H400"/>
-            <path d="M255 120V440" stroke-dasharray="6 5" stroke="#A3A3A1"/>
+            <path d="M110 200H400M110 280H400"/>
           </g>
-          <!-- windows -->
-          <g stroke="#A3A3A1" stroke-width="1.2">
+          <path class="dw-sub" stroke-width="1.2" stroke-dasharray="6 5" d="M255 120V440"/>
+          <g class="dw-sub" stroke-width="1.2">
             <rect x="140" y="140" width="70" height="40"/><rect x="300" y="140" width="70" height="40"/>
             <rect x="140" y="220" width="70" height="40"/><rect x="300" y="220" width="70" height="40"/>
             <rect x="140" y="300" width="70" height="40"/><rect x="300" y="300" width="70" height="40"/>
             <rect x="225" y="380" width="60" height="60"/>
           </g>
-          <!-- slab hatch on ground floor -->
-          <g stroke="#FFFFFF" stroke-width="2.4"><path d="M110 360H400"/></g>
-          <!-- vertical dimension -->
-          <g stroke="#8A8B89" stroke-width="1">
-            <path d="M440 120V440M434 120H446M434 440H446M434 200h12M434 280h12M434 360h12"/>
-          </g>
-          <g fill="#A3A3A1" font-family="JetBrains Mono, monospace" font-size="11">
-            <text x="452" y="164">+9.60</text><text x="452" y="244">+6.40</text><text x="452" y="324">+3.20</text><text x="452" y="404">±0.00</text>
-          </g>
-          <!-- horizontal dimension -->
-          <g stroke="#A3A3A1" stroke-width="1"><path d="M110 30H400M110 24v12M400 24v12"/></g>
-          <text x="232" y="22" fill="#A3A3A1" font-family="JetBrains Mono, monospace" font-size="11">14.50 m</text>
-          <text x="20" y="430" fill="#A3A3A1" font-family="JetBrains Mono, monospace" font-size="11">ΤΟΜΗ Α–Α · 1:100</text>
-          <!-- crane -->
-          <g stroke="#F2F2F1" stroke-width="1.2">
+          <path class="dw-main" stroke-width="3" d="M110 360H400"/>
+          <g class="dw-sub" stroke-width="1"><path d="M440 120V440M434 120H446M434 440H446M434 200h12M434 280h12M434 360h12"/></g>
+          <g class="dw-text"><text x="452" y="164">+9.60</text><text x="452" y="244">+6.40</text><text x="452" y="324">+3.20</text><text x="452" y="404">±0.00</text></g>
+          <g class="dw-sub" stroke-width="1"><path d="M110 30H400M110 24v12M400 24v12"/></g>
+          <text class="dw-text" x="232" y="22">14.50 m</text>
+          <text class="dw-text" x="20" y="430">ΤΟΜΗ Α–Α · 1:100</text>
+          <g class="dw-main" stroke-width="1.2">
             <path d="M60 440V40M68 440V40M60 40h8"/>
             <path d="M60 80l8-20M60 120l8-20M60 160l8-20M60 200l8-20M60 240l8-20M60 280l8-20M60 320l8-20M60 360l8-20M60 400l8-20"/>
             <path d="M20 40H230M64 40V18M64 18L20 40M64 18L230 40"/>
-            <path d="M190 40V92" stroke-dasharray="3 3"/>
           </g>
-          <rect x="182" y="92" width="16" height="10" fill="#8A8B89"/>
+          <path class="dw-sub" stroke-width="1.2" stroke-dasharray="3 3" d="M190 40V92"/>
+          <rect class="dw-fill" x="182" y="92" width="16" height="10"/>
         </svg>
       </div>
     </div>
-    <!-- ΠΡΟΣΩΡΙΝΑ ΚΡΥΦΟ: εμφανίζεται μόνο με πραγματικούς αριθμούς της εταιρίας. -->
-    <div class="stats" hidden>
+    <!-- Πηγή αριθμών: αρχείο προσφορών 2025–2026 (έργα που ανατέθηκαν, περιοχές τους). Να επιβεβαιωθούν πριν φύγει το noindex. -->
+    <div class="stats">
       <div class="wrap">
-        <div class="stat"><b>[ ]</b><span class="label">χρόνια στον χώρο</span></div>
-        <div class="stat"><b>[ ]</b><span class="label">κτίρια που αναβαθμίσαμε</span></div>
-        <div class="stat"><b>[ ]</b><span class="label">m² θερμοπρόσοψης</span></div>
-        <div class="stat"><b>[ ]</b><span class="label">παραδόσεις εντός χρόνου</span></div>
+        <div class="stat"><b>70<sup>+</sup></b><span class="label">έργα που μας ανατέθηκαν από το 2025</span></div>
+        <div class="stat"><b>30<sup>+</sup></b><span class="label">περιοχές σε Αττική, νησιά και Πελοπόννησο</span></div>
+        <div class="stat"><b>3</b><span class="label">νησιά: Σέριφος, Σίφνος, Αίγινα</span></div>
       </div>
     </div>
   </div>
@@ -328,51 +340,51 @@ footer .mono{font-family:var(--mono);font-size:12px}
         <div class="sec-tag label">Υπηρεσίες</div>
         <div>
           <h2>Από τη ρωγμή μέχρι την πλήρη αναβάθμιση</h2>
-          <p>Αναλαμβάνουμε από μία επισκευή μέχρι την πλήρη αναβάθμιση ενός κτιρίου. Σε κάθε περίπτωση έχετε έναν μηχανικό ως σημείο επαφής και εβδομαδιαία ενημέρωση προόδου.</p>
+          <p>Αναλαμβάνουμε από μία στεγάνωση μέχρι την πλήρη ανακαίνιση ενός κτιρίου, με δικά μας συνεργεία και σταθερούς συνεργάτες για κάθε ειδικότητα.</p>
         </div>
       </div>
       <div class="services">
         <article class="svc">
-          <div class="code"><span>ΚΑΤ-01</span><span>Φέρων οργανισμός</span></div>
+          <div class="code"><span>ΚΑΤ-01</span><span>Όψεις και φέρων</span></div>
           <svg viewBox="0 0 44 44"><path d="M6 40V8h32v32zM6 24h32M22 8v32M12 14l6 6M28 30l6 6"/></svg>
-          <h3>Επισκευή &amp; ενίσχυση</h3>
-          <p>Αποκατάσταση ρωγμών, διαβρωμένου οπλισμού και αποκολλημένων σοβάδων σε κολόνες, δοκούς και πλάκες.</p>
-          <ul><li>Επισκευή σκυροδέματος</li><li>Ενισχύσεις με μανδύες</li><li>Μπαλκόνια και πρόβολοι</li></ul>
+          <h3>Επισκευή όψεων &amp; φέροντος</h3>
+          <p>Επισκευή διαβρωμένου οπλισμού, αποκατάσταση και βαφή όψεων πολυκατοικιών, με ικριώματα και άδεια μικρής κλίμακας όπου χρειάζεται.</p>
+          <ul><li>Οπλισμοί, πρόβολοι, απολήξεις</li><li>Μαρμαροποδιές και κιγκλιδώματα</li><li>Καμινάδες και φωταγωγοί</li></ul>
         </article>
         <article class="svc">
           <div class="code"><span>ΚΑΤ-02</span><span>Υγρασία</span></div>
           <svg viewBox="0 0 44 44"><path d="M22 4C16 14 10 20 10 27a12 12 0 0 0 24 0c0-7-6-13-12-23zM16 30a6 6 0 0 0 6 5"/></svg>
-          <h3>Στεγανοποιήσεις</h3>
-          <p>Ταράτσες, υπόγεια, ζαρντινιέρες και μπάνια, με υλικά και εγγύηση που αναφέρονται γραπτά στην προσφορά.</p>
-          <ul><li>Ταράτσες και στέγες</li><li>Υπόγεια και θεμέλια</li><li>Θερμομονωτικές μεμβράνες</li></ul>
+          <h3>Στεγανώσεις</h3>
+          <p>Δώματα, ταράτσες, καφάο και μπάνια. Βρίσκουμε από πού μπαίνει το νερό πριν προτείνουμε λύση.</p>
+          <ul><li>Στεγάνωση και θερμομόνωση δώματος</li><li>Κούτελα και καφάο</li><li>Υγρασίες σε τοίχους και ταβάνια</li></ul>
         </article>
         <article class="svc">
           <div class="code"><span>ΚΑΤ-03</span><span>Ενέργεια</span></div>
           <svg viewBox="0 0 44 44"><path d="M8 8h28v28H8zM8 8l28 28M22 4v4M22 36v4M4 22h4M36 22h4"/></svg>
           <h3>Ενεργειακή αναβάθμιση</h3>
-          <p>Θερμοπρόσοψη, κουφώματα και μόνωση δώματος για άνοδο ενεργειακής κλάσης, με υποστήριξη σε προγράμματα επιδότησης.</p>
-          <ul><li>Εξωτερική θερμομόνωση (ETICS)</li><li>Αλλαγή κουφωμάτων</li><li>Συνεργασία με ενεργειακό επιθεωρητή</li></ul>
+          <p>Θερμοπρόσοψη, θερμά αλουμίνια και μόνωση, για κτίριο που ζεσταίνεται και δροσίζεται με λιγότερο κόστος.</p>
+          <ul><li>Θερμοπρόσοψη με γραφιτούχο EPS</li><li>Κουφώματα θερμοδιακοπής</li><li>Αντλίες θερμότητας και ηλιακοί</li></ul>
         </article>
         <article class="svc">
-          <div class="code"><span>ΚΑΤ-04</span><span>Όψεις</span></div>
-          <svg viewBox="0 0 44 44"><path d="M6 40V6h32v34M6 40h32M12 12h8v8h-8zM24 12h8v8h-8zM12 26h8v8h-8zM24 26h8v8h-8z"/></svg>
-          <h3>Αποκατάσταση όψεων</h3>
-          <p>Συντήρηση και βαφή όψεων πολυκατοικιών, επισκευή μαρμάρων και κάγκελων, με σκαλωσιά και ασφάλιση εργοταξίου.</p>
-          <ul><li>Βαφές όψεων και κλιμακοστασίων</li><li>Επισκευή επενδύσεων</li><li>Υδροβολές και καθαρισμοί</li></ul>
-        </article>
-        <article class="svc">
-          <div class="code"><span>ΚΑΤ-05</span><span>Εσωτερικοί χώροι</span></div>
+          <div class="code"><span>ΚΑΤ-04</span><span>Εσωτερικοί χώροι</span></div>
           <svg viewBox="0 0 44 44"><path d="M8 36l20-20M24 12l8 8M30 6l8 8-6 6-8-8zM6 38h12"/></svg>
           <h3>Ανακαινίσεις</h3>
-          <p>Ριζικές ανακαινίσεις διαμερισμάτων, καταστημάτων και γραφείων, με πρόγραμμα ώστε να μένετε εκτός χώρου όσο λιγότερο γίνεται.</p>
-          <ul><li>Μπάνια και κουζίνες</li><li>Δάπεδα, γυψοσανίδες, χρώματα</li><li>Ηλεκτρολογικά και υδραυλικά</li></ul>
+          <p>Διαμερίσματα, μονοκατοικίες, γραφεία και αλλαγές χρήσης, από τις αποξηλώσεις μέχρι το τελευταίο χέρι βαφής.</p>
+          <ul><li>Μπάνια και κουζίνες</li><li>Δάπεδα, πλακίδια, βαφές</li><li>Μετατροπή χώρων</li></ul>
         </article>
         <article class="svc">
-          <div class="code"><span>ΚΑΤ-06</span><span>Πολυκατοικίες</span></div>
-          <svg viewBox="0 0 44 44"><path d="M6 6h24l8 8v24H6zM30 6v8h8M12 22h20M12 28h20M12 34h12"/></svg>
-          <h3>Προγράμματα συντήρησης</h3>
-          <p>Ετήσιο πρόγραμμα ελέγχων και μικροεπισκευών για διαχειριστές πολυκατοικιών και ιδιοκτήτες επαγγελματικών κτιρίων.</p>
-          <ul><li>Ετήσια αυτοψία με αναφορά</li><li>Προτεραιοποίηση εργασιών</li><li>Γρήγορη ανταπόκριση σε βλάβες</li></ul>
+          <div class="code"><span>ΚΑΤ-05</span><span>Δίκτυα και ξηρά δόμηση</span></div>
+          <svg viewBox="0 0 44 44"><path d="M6 8h32M6 36h32M12 8v28M32 8v28M12 22h20M22 22v14"/></svg>
+          <h3>Γυψοσανίδες &amp; Η/Μ</h3>
+          <p>Ξηρά δόμηση σε κατοικίες και κτίρια γραφείων, και νέες ηλεκτρολογικές και υδραυλικές εγκαταστάσεις.</p>
+          <ul><li>Τοίχοι και ψευδοροφές γυψοσανίδας</li><li>Ηλεκτρολογικά και υδραυλικά</li><li>Κεντρική θέρμανση πολυκατοικιών</li></ul>
+        </article>
+        <article class="svc">
+          <div class="code"><span>ΚΑΤ-06</span><span>Κυκλάδες</span></div>
+          <svg viewBox="0 0 44 44"><path d="M4 38h36M8 38V22h14v16M22 38V16h14v22M12 30h6M26 26h6M8 22c0-4 14-4 14 0M22 16c0-4 14-4 14 0"/></svg>
+          <h3>Νησιά &amp; πέτρινες κατοικίες</h3>
+          <p>Κατασκευή και επισκευή σε Σέριφο και Σίφνο, με σεβασμό στην τοπική αρχιτεκτονική.</p>
+          <ul><li>Πέτρινες κατοικίες τύπου κελί</li><li>Καλαμωτές, πέργκολες, παραδοσιακά επιχρίσματα</li><li>Αποκάλυψη και καθαρισμός πέτρας</li></ul>
         </article>
       </div>
     </div>
@@ -383,42 +395,84 @@ footer .mono{font-family:var(--mono);font-size:12px}
       <div class="sec-head">
         <div class="sec-tag label">Έργα</div>
         <div>
-          <h2>Επιλεγμένα έργα</h2>
-          <p>Εδώ θα μπουν οι πραγματικές σας φωτογραφίες. Στις επισκευές το «πριν και μετά» πείθει περισσότερο από κάθε κείμενο, γι' αυτό κάθε έργο θα έχει δική του σελίδα με σύγκριση φωτογραφιών.</p>
+          <h2>Πρόσφατα έργα</h2>
+          <p>Μερικά από τα έργα που μας εμπιστεύτηκαν τα δύο τελευταία χρόνια. Δεν δημοσιεύουμε ονόματα πελατών ούτε διευθύνσεις.</p>
         </div>
       </div>
       <div class="filters" role="group" aria-label="Φίλτρο έργων">
         <button type="button" id="f-all" data-f="all" aria-pressed="true">Όλα</button>
         <button type="button" id="f-rep" data-f="rep" aria-pressed="false">Επισκευές</button>
-        <button type="button" id="f-upg" data-f="upg" aria-pressed="false">Αναβαθμίσεις</button>
         <button type="button" id="f-ren" data-f="ren" aria-pressed="false">Ανακαινίσεις</button>
+        <button type="button" id="f-new" data-f="new" aria-pressed="false">Κατασκευές</button>
       </div>
       <div class="proj-grid">
-        <article class="proj wide" data-c="rep">
-          <div class="ph"><canvas data-seed="1" data-kind="tower"></canvas><span class="tag">ΕΠΙΣΚΕΥΗ</span><span class="note">φωτογραφία πριν / μετά</span></div>
-          <div class="proj-meta"><div><h3>Επισκευή φέροντος πολυκατοικίας</h3><p class="label" style="margin-top:6px">[περιοχή · έτος]</p></div>
-          <dl><dt>Εργασίες</dt><dd>[ ]</dd><dt>Διάρκεια</dt><dd>[ ]</dd><dt>Έτος</dt><dd>[ ]</dd></dl></div>
-        </article>
-        <article class="proj" data-c="upg">
-          <div class="ph"><canvas data-seed="2" data-kind="tower"></canvas><span class="tag">ΑΝΑΒΑΘΜΙΣΗ</span><span class="note">φωτογραφία πριν / μετά</span></div>
-          <div class="proj-meta"><div><h3>Θερμοπρόσοψη πολυκατοικίας</h3><p class="label" style="margin-top:6px">[περιοχή · έτος]</p></div>
-          <dl><dt>Επιφάνεια</dt><dd>[ ]</dd><dt>Διάρκεια</dt><dd>[ ]</dd></dl></div>
+        <article class="proj wide" data-c="new">
+          <div class="ph"><canvas data-seed="1" data-kind="stone"></canvas><span class="tag">ΚΑΤΑΣΚΕΥΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Τρεις πέτρινες κατοικίες τύπου κελί</h3>
+            <p>Νέα κατασκευή τριών παραδοσιακών κατοικιών των 45 m² η καθεμία, στην κυκλαδίτικη αρχιτεκτονική.</p>
+            <p class="label where"><span>Αλινοβροχιά, Σέριφος</span><span>2026</span></p>
+          </div>
         </article>
         <article class="proj" data-c="rep">
-          <div class="ph"><canvas data-seed="3" data-kind="shed"></canvas><span class="tag">ΕΠΙΣΚΕΥΗ</span><span class="note">φωτογραφία πριν / μετά</span></div>
-          <div class="proj-meta"><div><h3>Στεγανοποίηση ταράτσας</h3><p class="label" style="margin-top:6px">[περιοχή · έτος]</p></div>
-          <dl><dt>Επιφάνεια</dt><dd>[ ]</dd><dt>Διάρκεια</dt><dd>[ ]</dd></dl></div>
+          <div class="ph"><canvas data-seed="2" data-kind="tower"></canvas><span class="tag">ΕΠΙΣΚΕΥΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Αποκατάσταση πολυκατοικίας</h3>
+            <p>Άδεια μικρής κλίμακας, ικριώματα, οπλισμοί και βαφή όψης, μαρμαροποδιές, κιγκλιδώματα, καμινάδα.</p>
+            <p class="label where"><span>Ζωγράφου</span><span>2026</span></p>
+          </div>
+        </article>
+        <article class="proj" data-c="rep">
+          <div class="ph"><canvas data-seed="3" data-kind="house"></canvas><span class="tag">ΕΠΙΣΚΕΥΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Ανανέωση κτιρίου στο Δασκαλειό</h3>
+            <p>Ικριώματα, οπλισμοί, ανακαίνιση λουτρού, ηλεκτρολογικά, βαφές και θερμά αλουμίνια.</p>
+            <p class="label where"><span>Δασκαλειό, Κερατέα</span><span>2025</span></p>
+          </div>
         </article>
         <article class="proj" data-c="ren">
-          <div class="ph"><canvas data-seed="4" data-kind="plan"></canvas><span class="tag">ΑΝΑΚΑΙΝΙΣΗ</span><span class="note">φωτογραφία πριν / μετά</span></div>
-          <div class="proj-meta"><div><h3>Ανακαίνιση διαμερίσματος</h3><p class="label" style="margin-top:6px">[περιοχή · έτος]</p></div>
-          <dl><dt>Εμβαδόν</dt><dd>[ ]</dd><dt>Διάρκεια</dt><dd>[ ]</dd></dl></div>
+          <div class="ph"><canvas data-seed="4" data-kind="plan"></canvas><span class="tag">ΑΝΑΚΑΙΝΙΣΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Ιατρείο που έγινε κατοικία</h3>
+            <p>Μετατροπή σε δύο επίπεδα: αποξηλώσεις, νέες τοιχοποιίες, υδραυλικά, ηλεκτρολογικά, πλακίδια.</p>
+            <p class="label where"><span>Κηφισιά</span><span>2026</span></p>
+          </div>
         </article>
-        <article class="proj" data-c="upg">
-          <div class="ph"><canvas data-seed="5" data-kind="house"></canvas><span class="tag">ΑΝΑΒΑΘΜΙΣΗ</span><span class="note">φωτογραφία πριν / μετά</span></div>
-          <div class="proj-meta"><div><h3>Ενεργειακή αναβάθμιση μονοκατοικίας</h3><p class="label" style="margin-top:6px">[περιοχή · έτος]</p></div>
-          <dl><dt>Εμβαδόν</dt><dd>[ ]</dd><dt>Διάρκεια</dt><dd>[ ]</dd></dl></div>
+        <article class="proj" data-c="rep">
+          <div class="ph"><canvas data-seed="5" data-kind="stone"></canvas><span class="tag">ΕΠΙΣΚΕΥΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Κοινόχρηστα και κελί στο Λιβάδι</h3>
+            <p>Οπλισμοί, επιχρίσματα, στεγανώσεις, δάπεδα, και εσωτερικά κελιού με καλαμωτή και αποκάλυψη πέτρας.</p>
+            <p class="label where"><span>Λιβάδι, Σέριφος</span><span>2026</span></p>
+          </div>
         </article>
+        <article class="proj wide" data-c="ren">
+          <div class="ph"><canvas data-seed="6" data-kind="tower"></canvas><span class="tag">ΑΝΑΚΑΙΝΙΣΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Υδραυλικά επτά μπάνιων και δύο κουζινών</h3>
+            <p>Πλήρης υδραυλική εγκατάσταση με αποχέτευση, υδρορροές και ηλιακό, μαζί με επιχρίσματα και θερμοπρόσοψη.</p>
+            <p class="label where"><span>Σίφνος</span><span>2025</span></p>
+          </div>
+        </article>
+        <article class="proj" data-c="new">
+          <div class="ph"><canvas data-seed="7" data-kind="green"></canvas><span class="tag">ΚΑΤΑΣΚΕΥΗ</span><span class="note">[φωτογραφία έργου]</span></div>
+          <div class="proj-meta">
+            <h3>Θερμοκήπιο με αλουμίνια</h3>
+            <p>Κατασκευή θερμοκηπίου με σκελετό και κουφώματα αλουμινίου.</p>
+            <p class="label where"><span>Άγιος Στέφανος</span><span>2025</span></p>
+          </div>
+        </article>
+      </div>
+      <div class="areas">
+        <div class="label">Πού δουλεύουμε</div>
+        <ul>
+          <li><b>Αθήνα:</b> Κολωνάκι, Κυψέλη, Παγκράτι, Αμπελόκηποι, Γαλάτσι, Ζωγράφου</li>
+          <li><b>Βόρεια:</b> Κηφισιά, Μαρούσι, Πεύκη, Φιλοθέη, Ψυχικό, Βριλήσσια, Ν. Φιλαδέλφεια, Άγιος Στέφανος, Ωρωπός</li>
+          <li><b>Νότια:</b> Καλλιθέα, Ν. Σμύρνη, Π. Φάληρο, Βάρη, Καβούρι, Κερατέα, Πόρτο Ράφτη</li>
+          <li><b>Δυτικά και Πειραιάς:</b> Περιστέρι, Πειραιάς</li>
+          <li><b>Νησιά:</b> Σέριφος, Σίφνος, Αίγινα</li>
+          <li><b>Πελοπόννησος:</b> Μονεμβασιά, Άστρος</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -429,15 +483,15 @@ footer .mono{font-family:var(--mono);font-size:12px}
         <div class="sec-tag label">Διαδικασία</div>
         <div>
           <h2>Πώς δουλεύουμε</h2>
-          <p>Πέντε φάσεις με σαφή παραδοτέα. Πριν ξεκινήσει η επόμενη, ξέρετε τι ολοκληρώθηκε, τι κόστισε και τι ακολουθεί.</p>
+          <p>Πέντε φάσεις με σαφή παραδοτέα. Ό,τι αλλάζει στην πορεία το συμφωνούμε γραπτά πριν γίνει.</p>
         </div>
       </div>
-      <ol class="steps" style="list-style:none;margin:0;padding:0">
-        <li class="step"><span class="n">01</span><h3>Αυτοψία</h3><p>Επίσκεψη στο κτίριο, καταγραφή φθορών με φωτογραφίες και πρώτη εκτίμηση.</p><span class="dur">1–3 ημέρες</span></li>
-        <li class="step"><span class="n">02</span><h3>Μελέτη &amp; προσφορά</h3><p>Αναλυτικός προϋπολογισμός ανά εργασία και χρονοδιάγραμμα Gantt.</p><span class="dur">1–2 εβδομάδες</span></li>
-        <li class="step"><span class="n">03</span><h3>Άδειες</h3><p>Έγκριση εργασιών μικρής κλίμακας ή άδεια, όπου απαιτείται.</p><span class="dur">όπου χρειάζεται</span></li>
-        <li class="step"><span class="n">04</span><h3>Κατασκευή</h3><p>Υπεύθυνος μηχανικός στο εργοτάξιο και εβδομαδιαία αναφορά με φωτογραφίες.</p><span class="dur">βάσει χρονοδιαγράμματος</span></li>
-        <li class="step"><span class="n">05</span><h3>Παράδοση</h3><p>Τελικός έλεγχος, φωτογραφικός φάκελος εργασιών και γραπτή εγγύηση.</p><span class="dur">γραπτή εγγύηση</span></li>
+      <ol class="steps">
+        <li class="step"><span class="n">01</span><h3>Αυτοψία</h3><p>Επίσκεψη στον χώρο, μετρήσεις και φωτογραφίες των φθορών.</p><span class="out">→ καταγραφή εργασιών</span></li>
+        <li class="step"><span class="n">02</span><h3>Προσφορά</h3><p>Αναλυτική προσφορά ανά άρθρο, με ποσότητες, τιμές μονάδας και ό,τι περιλαμβάνεται.</p><span class="out">→ γραπτή προσφορά</span></li>
+        <li class="step"><span class="n">03</span><h3>Συμφωνία &amp; άδειες</h3><p>Υπογραφή, πρόγραμμα εργασιών και έγκριση εργασιών μικρής κλίμακας, όπου απαιτείται.</p><span class="out">→ συμφωνητικό</span></li>
+        <li class="step"><span class="n">04</span><h3>Κατασκευή</h3><p>Υπεύθυνος στο εργοτάξιο, ενημέρωση για την πρόοδο και γραπτή έγκριση για κάθε αλλαγή.</p><span class="out">→ επιμετρήσεις</span></li>
+        <li class="step"><span class="n">05</span><h3>Παράδοση</h3><p>Τελικός έλεγχος μαζί σας, παράδοση του έργου και τελική εκκαθάριση.</p><span class="out">→ παράδοση έργου</span></li>
       </ol>
     </div>
   </section>
@@ -450,16 +504,36 @@ footer .mono{font-family:var(--mono);font-size:12px}
       </div>
       <div class="creds">
         <div class="creds-copy">
-          <p>Η Contractor PNG ειδικεύεται στη συντήρηση, την επισκευή και την αναβάθμιση υφιστάμενων κτιρίων. Δουλεύουμε με δικά μας συνεργεία και σταθερούς συνεργάτες, ώστε ο ίδιος άνθρωπος να είναι υπεύθυνος από την αυτοψία μέχρι την παράδοση.</p>
-          <p>Εδώ θα μπει η πραγματική ιστορία της εταιρίας, οι άνθρωποι πίσω από αυτήν και φωτογραφίες της ομάδας στο εργοτάξιο.</p>
-          <div class="quote-ph">Χώρος για 2–3 πραγματικές αξιολογήσεις πελατών (π.χ. από το Google Business Profile σας). Δεν βάζουμε επινοημένες κριτικές.</div>
+          <p>Η Contractor PNG ειδικεύεται στη συντήρηση, την επισκευή και την αναβάθμιση υφιστάμενων κτιρίων στην Αττική και στις Κυκλάδες. Δουλεύουμε με δικά μας συνεργεία και σταθερούς συνεργάτες ανά ειδικότητα, ώστε ένας άνθρωπος να είναι υπεύθυνος από την αυτοψία μέχρι την παράδοση.</p>
+          <p>[Η ιστορία της εταιρίας, οι άνθρωποί της και φωτογραφίες της ομάδας στο εργοτάξιο.]</p>
+          <p class="label" style="margin-top:28px">Για ποιους δουλεύουμε</p>
+          <div class="clients">
+            <span>Ιδιοκτήτες κατοικιών</span><span>Διαχειρίσεις πολυκατοικιών</span><span>Εκπαιδευτήρια</span><span>Γραφεία</span><span>Ξενοδοχεία</span><span>Κατασκευαστικές εταιρίες</span>
+          </div>
+          <div class="quote-ph">[Χώρος για 2–3 πραγματικές αξιολογήσεις πελατών, π.χ. από το Google Business Profile. Δεν βάζουμε επινοημένες κριτικές.]</div>
         </div>
         <div class="badges">
-          <div class="badge"><b>Ασφάλιση</b><span>Αστική ευθύνη και ασφάλιση εργοταξίου</span></div>
-          <div class="badge"><b>Εγγύηση</b><span>Γραπτή εγγύηση εργασιών και υλικών</span></div>
-          <div class="badge"><b>Πιστοποιήσεις</b><span>Προς συμπλήρωση, αν υπάρχουν (ISO, ΜΗ.Ε.Ε.Π. κ.λπ.)</span></div>
-          <div class="badge"><b>Υλικά</b><span>Πιστοποιημένα υλικά με τεχνικά φυλλάδια στον φάκελο έργου</span></div>
+          <div class="badge"><b>Ένας υπεύθυνος</b><span>Από την αυτοψία μέχρι την παράδοση</span></div>
+          <div class="badge"><b>Αναλυτικά</b><span>Προσφορά ανά άρθρο, με ποσότητες και τιμές μονάδας</span></div>
+          <div class="badge"><b>Άδειες</b><span>Έγκριση εργασιών μικρής κλίμακας και ικριώματα</span></div>
+          <div class="badge"><b>Συνεργεία</b><span>Δικά μας συνεργεία και σταθεροί συνεργάτες ανά ειδικότητα</span></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag label">Ερωτήσεις</div>
+        <div><h2>Συχνές ερωτήσεις</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary>Δουλεύετε εκτός Αθήνας;</summary><p>Ναι. Εκτός από την Αττική έχουμε έργα στη Σέριφο, τη Σίφνο και την Αίγινα, καθώς και στην Πελοπόννησο. Για έργα εκτός Αττικής η μετακίνηση και η διαμονή του συνεργείου γράφονται χωριστά στην προσφορά.</p></details>
+        <details><summary>Τι περιλαμβάνει η προσφορά;</summary><p>Κάθε εργασία είναι ξεχωριστό άρθρο, με ποσότητα, μονάδα και τιμή. Γράφουμε καθαρά αν τα υλικά και ο ΦΠΑ περιλαμβάνονται, ώστε να συγκρίνετε εύκολα.</p></details>
+        <details><summary>Αναλαμβάνετε την άδεια για τις εργασίες;</summary><p>Για επισκευές όψεων και ικριώματα σε πολυκατοικίες φροντίζουμε την έγκριση εργασιών μικρής κλίμακας μαζί με τον μηχανικό του έργου.</p></details>
+        <details><summary>Συνεργάζεστε με διαχειριστές πολυκατοικιών;</summary><p>Ναι. Δίνουμε μία προσφορά για τα κοινόχρηστα, την οποία ο διαχειριστής μπορεί να παρουσιάσει στη γενική συνέλευση.</p></details>
+        <details><summary>Τι γίνεται αν χρειαστεί κάτι επιπλέον στην πορεία;</summary><p>Κάθε αλλαγή ή επιπλέον εργασία τη συμφωνούμε γραπτά, με τιμή, πριν γίνει. Έτσι το τελικό ποσό δεν έχει εκπλήξεις.</p></details>
       </div>
     </div>
   </section>
@@ -468,7 +542,7 @@ footer .mono{font-family:var(--mono);font-size:12px}
     <div class="wrap">
       <div class="sec-head">
         <div class="sec-tag label">Επικοινωνία</div>
-        <div><h2>Ζητήστε προσφορά</h2><p>Περιγράψτε μας το έργο. Ένας μηχανικός θα σας καλέσει μέσα σε μία εργάσιμη ημέρα για να κανονίσετε αυτοψία.</p></div>
+        <div><h2>Ζητήστε προσφορά</h2><p>Περιγράψτε μας το έργο και θα σας καλέσουμε για να κανονίσουμε αυτοψία.</p></div>
       </div>
       <div class="contact-grid">
         <div class="info">
@@ -481,11 +555,11 @@ footer .mono{font-family:var(--mono);font-size:12px}
           <div class="field"><label for="q-name">Ονοματεπώνυμο</label><input id="q-name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="q-phone">Τηλέφωνο</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
           <div class="field"><label for="q-type">Τύπος έργου</label>
-            <select id="q-type" name="type"><option>Επισκευή φέροντος / ρωγμές</option><option>Στεγανοποίηση</option><option>Θερμοπρόσοψη / ενεργειακή αναβάθμιση</option><option>Αποκατάσταση όψεων</option><option>Ανακαίνιση</option><option>Άλλο</option></select></div>
+            <select id="q-type" name="type"><option>Επισκευή όψεων / φέροντος</option><option>Στεγάνωση</option><option>Θερμοπρόσοψη / ενεργειακή αναβάθμιση</option><option>Ανακαίνιση</option><option>Γυψοσανίδες / Η/Μ</option><option>Έργο σε νησί</option><option>Άλλο</option></select></div>
           <div class="field"><label for="q-area">Περιοχή</label><input id="q-area" name="area" placeholder="Πόλη / περιοχή"></div>
           <div class="field full"><label for="q-msg">Περιγραφή έργου</label><textarea id="q-msg" name="msg" placeholder="Τετραγωνικά, επιθυμητή ημερομηνία έναρξης, ό,τι άλλο θεωρείτε σημαντικό"></textarea></div>
           <div class="form-foot"><small>Τα στοιχεία σας χρησιμοποιούνται μόνο για να σας απαντήσουμε.</small><button class="btn" type="submit">Αποστολή αιτήματος</button></div>
-          <p class="sent" id="q-sent" hidden>Στο δείγμα η φόρμα δεν αποστέλλει τίποτα. Στο τελικό site θα έρχεται κατευθείαν στο email της εταιρίας.</p>
+          <p class="sent" id="q-sent" hidden>Στο δείγμα η φόρμα δεν αποστέλλει τίποτα. Στο τελικό site το αίτημα θα έρχεται κατευθείαν στο email της εταιρίας.</p>
         </form>
       </div>
     </div>
@@ -494,10 +568,12 @@ footer .mono{font-family:var(--mono);font-size:12px}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Contractor PNG · Συντήρηση, επισκευή και αναβάθμιση κτιρίων</span>
+    <div class="who"><b>Contractor PNG</b><span>Γαβριήλ Δημήτρης · General Contractor</span></div>
     <span class="mono">ΑΦΜ [ ] · ΓΕΜΗ [ ]</span>
+    <span>© 2026 Contractor PNG · Συντήρηση, επισκευή και αναβάθμιση κτιρίων</span>
   </div>
 </footer>
+
 <script>
 // Greek all-caps never carry accents: set the language and strip tonos from any text rendered uppercase.
 (function(){
@@ -508,9 +584,9 @@ footer .mono{font-family:var(--mono);font-size:12px}
       const el=n.parentElement;if(!el||el.closest('script,style'))continue;
       const t=n.nodeValue;
       const isUpper=getComputedStyle(el).textTransform==='uppercase';
-      const strip=s=>s.normalize('NFD').replace(/\u0301/g,'').normalize('NFC');
+      const strip=s=>s.normalize('NFD').replace(/́/g,'').normalize('NFC');
       // Uppercase via CSS: strip everything. Otherwise only words typed fully in capitals.
-      const v=isUpper?strip(t):t.replace(/[\u0386-\u03AB]{2,}/g,wd=>/[\u03AC-\u03CE]/.test(wd)?wd:strip(wd));
+      const v=isUpper?strip(t):t.replace(/[Ά-Ϋ]{2,}/g,wd=>/[ά-ώ]/.test(wd)?wd:strip(wd));
       if(v!==t)n.nodeValue=v;
     }
   }
@@ -538,56 +614,66 @@ footer .mono{font-family:var(--mono);font-size:12px}
   const form=document.getElementById('quote');
   form.addEventListener('submit',e=>{e.preventDefault();document.getElementById('q-sent').hidden=false;});
 
-  // Placeholder project "photos": generated technical line drawings
+  // Placeholder project "photos": technical line drawings in the theme's colors, until real photos arrive.
+  const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
   function draw(c){
     const r=c.getBoundingClientRect(); if(!r.width) return;
     const d=Math.min(window.devicePixelRatio||1,2);
     c.width=r.width*d;c.height=r.height*d;
     const x=c.getContext('2d');x.scale(d,d);
     const W=r.width,H=r.height,seed=+c.dataset.seed,k=c.dataset.kind;
+    const ink=css('--ink'),sub=css('--grey'),grid=css('--grid'),bg=css('--card');
     let s=seed*9301; const rnd=()=>((s=(s*9301+49297)%233280)/233280);
-    x.fillStyle='#1B1919';x.fillRect(0,0,W,H);
-    x.strokeStyle='#2E2C2C';x.lineWidth=1;
+    x.fillStyle=bg;x.fillRect(0,0,W,H);
+    x.strokeStyle=grid;x.lineWidth=1;
     for(let gx=0;gx<W;gx+=24){x.beginPath();x.moveTo(gx+.5,0);x.lineTo(gx+.5,H);x.stroke();}
     for(let gy=0;gy<H;gy+=24){x.beginPath();x.moveTo(0,gy+.5);x.lineTo(W,gy+.5);x.stroke();}
-    const g=H*.84; x.strokeStyle='#D9D9D7';x.lineWidth=1.5;
+    const g=H*.84; x.strokeStyle=ink;x.lineWidth=1.5;
     x.beginPath();x.moveTo(0,g);x.lineTo(W,g);x.stroke();
     x.lineWidth=1.3;
     if(k==='tower'){
       const bw=W*.34,bx=W*.5-bw/2,fl=5+Math.floor(rnd()*4),fh=(g-H*.12)/fl;
       x.strokeRect(bx,g-fh*fl,bw,fh*fl);
       for(let i=1;i<fl;i++){x.beginPath();x.moveTo(bx,g-fh*i);x.lineTo(bx+bw,g-fh*i);x.stroke();}
-      x.strokeStyle='#8A8B89';
+      x.strokeStyle=sub;
       for(let i=0;i<fl;i++)for(let j=0;j<4;j++){x.strokeRect(bx+8+j*(bw-16)/4+3,g-fh*(i+1)+fh*.25,(bw-16)/4-6,fh*.5);}
-      const ox=bx+bw+W*.08; x.strokeStyle='#D9D9D7';
-      x.strokeRect(ox,g-fh*3,W*.18,fh*3);
+      x.setLineDash([3,4]);x.strokeRect(bx-10,g-fh*fl-8,bw+20,fh*fl+8);x.setLineDash([]);
     }else if(k==='house'){
       const bw=W*.5,bx=W*.25,h=H*.42;
       x.beginPath();x.moveTo(bx,g);x.lineTo(bx,g-h);x.lineTo(bx+bw*.5,g-h-H*.16);x.lineTo(bx+bw,g-h);x.lineTo(bx+bw,g);x.stroke();
       x.beginPath();x.moveTo(bx,g-h/2);x.lineTo(bx+bw,g-h/2);x.stroke();
-      x.strokeStyle='#8A8B89';
+      x.strokeStyle=sub;
       x.strokeRect(bx+bw*.12,g-h*.85,bw*.25,h*.25);x.strokeRect(bx+bw*.63,g-h*.85,bw*.25,h*.25);
       x.strokeRect(bx+bw*.42,g-h*.42,bw*.16,h*.42);
-    }else if(k==='shed'){
-      const bw=W*.7,bx=W*.15,h=H*.36;
-      x.beginPath();x.moveTo(bx,g);x.lineTo(bx,g-h);x.lineTo(bx+bw/2,g-h-H*.08);x.lineTo(bx+bw,g-h);x.lineTo(bx+bw,g);x.stroke();
-      x.strokeStyle='#8A8B89';
-      for(let i=1;i<8;i++){const px=bx+bw*i/8;x.beginPath();x.moveTo(px,g);x.lineTo(px,g-h+(Math.abs(i-4)<4?-(4-Math.abs(i-4))*H*.02:0));x.stroke();}
-      x.strokeRect(bx+bw*.1,g-h*.6,bw*.2,h*.6);x.strokeRect(bx+bw*.7,g-h*.6,bw*.2,h*.6);
+    }else if(k==='stone'){
+      const n=3,gap=W*.04,bw=(W*.78-gap*(n-1))/n,h=H*.3;
+      for(let i=0;i<n;i++){
+        const bx=W*.11+i*(bw+gap),bh=h*(.85+rnd()*.3);
+        x.strokeStyle=ink;x.beginPath();x.moveTo(bx,g);x.lineTo(bx,g-bh+6);x.quadraticCurveTo(bx,g-bh,bx+6,g-bh);x.lineTo(bx+bw-6,g-bh);x.quadraticCurveTo(bx+bw,g-bh,bx+bw,g-bh+6);x.lineTo(bx+bw,g);x.stroke();
+        x.strokeStyle=sub;x.strokeRect(bx+bw*.38,g-bh*.6,bw*.24,bh*.6);x.strokeRect(bx+bw*.1,g-bh*.75,bw*.16,bh*.2);
+        for(let j=0;j<4;j++){const yy=g-bh*(.15+j*.2);x.beginPath();x.moveTo(bx+bw*.68,yy);x.lineTo(bx+bw*.9,yy);x.stroke();}
+      }
+    }else if(k==='green'){
+      const bw=W*.66,bx=W*.17,h=H*.4,ribs=7;
+      x.beginPath();x.moveTo(bx,g);x.lineTo(bx,g-h*.55);x.quadraticCurveTo(bx+bw/2,g-h*1.25,bx+bw,g-h*.55);x.lineTo(bx+bw,g);x.stroke();
+      x.strokeStyle=sub;
+      for(let i=1;i<ribs;i++){const px=bx+bw*i/ribs,t=i/ribs,top=g-h*.55-(h*.7)*4*t*(1-t)*.98;x.beginPath();x.moveTo(px,g);x.lineTo(px,top);x.stroke();}
+      x.beginPath();x.moveTo(bx,g-h*.55);x.lineTo(bx+bw,g-h*.55);x.stroke();
     }else{
-      x.strokeStyle='#D9D9D7';x.lineWidth=3;
+      x.strokeStyle=ink;x.lineWidth=3;
       const px=W*.18,py=H*.14,pw=W*.64,ph=H*.66;
       x.strokeRect(px,py,pw,ph);
       x.lineWidth=1.5;
       x.beginPath();x.moveTo(px+pw*.55,py);x.lineTo(px+pw*.55,py+ph*.62);x.moveTo(px,py+ph*.62);x.lineTo(px+pw,py+ph*.62);x.stroke();
-      x.strokeStyle='#8A8B89';
+      x.strokeStyle=sub;
       x.beginPath();x.arc(px+pw*.55,py+ph*.62,ph*.18,Math.PI,Math.PI*1.5);x.stroke();
     }
-    x.fillStyle='#F2F2F1';x.fillRect(W*.06,g-4,W*.88,2);
+    x.fillStyle=sub;x.fillRect(W*.06,g-4,W*.88,2);
   }
   const cs=[...document.querySelectorAll('.ph canvas')];
   const all=()=>cs.forEach(draw);
   all(); window.addEventListener('resize',all);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change',all);
   btns.forEach(b=>b.addEventListener('click',()=>requestAnimationFrame(all)));
 })();
 </script>
