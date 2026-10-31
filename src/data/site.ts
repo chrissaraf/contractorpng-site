@@ -1,5 +1,5 @@
-// Company details in one place. Everything still in [brackets] waits for Christos.
-// While demo is true the site carries noindex, the ΔΕΙΓΜΑ bar and a closed robots.txt.
+// Company details in one place. Empty afm/gemi stay hidden until Christos sends them.
+// While demo is true the site carries noindex and the ΔΕΙΓΜΑ bar.
 export const site = {
   name: 'Contractor PNG',
   url: 'https://contractorpng.gr',
@@ -9,14 +9,18 @@ export const site = {
   owner: 'Γαβριήλ Δημήτρης',
   ownerSchema: 'Δημήτρης Γαβριήλ',
   ownerRole: 'General Contractor',
-  demo: true,
+  demo: false,
   contact: {
-    phone: '[τηλέφωνο]',
-    email: '[email]',
-    address: '[διεύθυνση]',
-    hours: '[ωράριο]',
-    afm: '[ ]',
-    gemi: '[ ]',
+    phone: '213 040 2229',
+    phoneHref: 'tel:+302130402229',
+    email: 'contractorgavriil@gmail.com',
+    street: 'Αγλαονίκης 5',
+    postcode: '11743',
+    city: 'Αθήνα',
+    address: 'Αγλαονίκης 5, Αθήνα 11743',
+    hours: 'Δευτέρα – Παρασκευή, 08:00 – 16:00',
+    afm: '',
+    gemi: '',
   },
   areaServed: ['Αττική', 'Σέριφος', 'Σίφνος', 'Αίγινα'],
 };
@@ -28,7 +32,7 @@ export const nav = [
   { href: '/epikoinonia/', label: 'Επικοινωνία' },
 ];
 
-// Source: offers archive 2025–2026 (jobs that went ahead and their areas). To confirm before noindex goes.
+// Source: offers archive 2025–2026 (jobs that went ahead and their areas). Confirmed by Christos 31/10/2026.
 export const stats = [
   { n: '70', sup: '+', label: 'έργα που μας ανατέθηκαν από το 2025' },
   { n: '30', sup: '+', label: 'περιοχές σε Αττική, νησιά και Πελοπόννησο' },

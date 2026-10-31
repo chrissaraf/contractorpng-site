@@ -66,7 +66,6 @@ const canvases = [...document.querySelectorAll<HTMLCanvasElement>('.ph canvas')]
 const all = () => canvases.forEach(draw);
 all();
 window.addEventListener('resize', all);
-matchMedia('(prefers-color-scheme: dark)').addEventListener('change', all);
 
 // Project filter (only on pages that have one)
 const btns = [...document.querySelectorAll<HTMLButtonElement>('.filters button')];
