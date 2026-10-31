@@ -1,0 +1,24 @@
+---
+import { site, nav } from '../data/site';
+import { services } from '../data/services';
+const year = new Date().getFullYear();
+---
+<footer>
+  <div class="wrap">
+    <div class="who"><b>{site.name}</b><span>{site.owner} · {site.ownerRole}</span></div>
+    <ul class="foot-nav" aria-label="Σελίδες">
+      {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+    </ul>
+  </div>
+  <div class="wrap">
+    <ul class="foot-nav" aria-label="Υπηρεσίες">
+      {services.map((s) => <li><a href={`/ypiresies/${s.slug}/`}>{s.title}</a></li>)}
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap">
+      <span class="mono">ΑΦΜ {site.contact.afm} · ΓΕΜΗ {site.contact.gemi}</span>
+      <span>© {year} {site.name} · Συντήρηση, επισκευή και αναβάθμιση κτιρίων</span>
+    </div>
+  </div>
+</footer>

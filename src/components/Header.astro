@@ -1,0 +1,21 @@
+---
+import { nav } from '../data/site';
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => path === href || path.startsWith(href);
+---
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Contractor PNG, αρχική">
+      <picture>
+        <source srcset="/assets/mark-white.png" media="(prefers-color-scheme: dark)">
+        <img class="brand-mark" src="/assets/mark-dark.png" alt="" width="157" height="96">
+      </picture>
+      <span class="brand-name">Contractor PNG<small>ΣΥΝΤΗΡΗΣΗ · ΕΠΙΣΚΕΥΗ · ΑΝΑΒΑΘΜΙΣΗ</small></span>
+    </a>
+    <ul id="nav-links">
+      {nav.map((n) => <li><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+    </ul>
+    <a class="btn" href="/epikoinonia/#form"><span class="full">Ζητήστε προσφορά</span><span class="short">Προσφορά</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Μενού"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16"/></svg></button>
+  </div>
+</header>

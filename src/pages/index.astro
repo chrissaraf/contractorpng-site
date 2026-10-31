@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import HeroDrawing from '../components/HeroDrawing.astro';
+import SectionHead from '../components/SectionHead.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { stats, steps, faq } from '../data/site';
+import { services } from '../data/services';
+import { projects } from '../data/projects';
+
+const featured = [1, 2, 4, 6].map((id) => projects.find((p) => p.id === id)!);
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+<Base schema={[faqSchema]}>
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="label">Αθήνα · Αττική · Κυκλάδες</p>
+        <h1 style="margin-top:18px">Δίνουμε<br><em>νέα ζωή</em><br>στο κτίριό<br>σας.</h1>
+        <p class="hero-lead">Επισκευές όψεων και φέροντος, στεγανώσεις, θερμοπροσόψεις και ανακαινίσεις για κατοικίες, πολυκατοικίες και επαγγελματικούς χώρους. Αναλυτική προσφορά ανά εργασία και ένας υπεύθυνος από την αυτοψία ως την παράδοση.</p>
+        <div class="hero-cta">
+          <a class="btn" href="/epikoinonia/#form">Ζητήστε προσφορά <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/erga/">Δείτε τα έργα μας</a>
+        </div>
+      </div>
+      <HeroDrawing />
+    </div>
+    <div class="stats">
+      <div class="wrap">
+        {stats.map((s) => <div class="stat"><b>{s.n}{s.sup && <sup>{s.sup}</sup>}</b><span class="label">{s.label}</span></div>)}
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <SectionHead tag="Υπηρεσίες" title="Από τη ρωγμή μέχρι την πλήρη αναβάθμιση" text="Αναλαμβάνουμε από μία στεγάνωση μέχρι την πλήρη ανακαίνιση ενός κτιρίου, με δικά μας συνεργεία και σταθερούς συνεργάτες για κάθε ειδικότητα." />
+      <div class="services">
+        {services.map((s) => <ServiceCard s={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="wrap">
+      <SectionHead tag="Έργα" title="Πρόσφατα έργα" text="Μερικά από τα έργα που μας εμπιστεύτηκαν τα δύο τελευταία χρόνια, σε σχέδιο. Από σεβασμό στους πελάτες μας δεν δημοσιεύουμε ονόματα, διευθύνσεις ούτε φωτογραφίες των σπιτιών τους." />
+      <div class="proj-grid">
+        {featured.map((p, i) => <ProjectCard p={p} wide={i === 0 || i === 3} />)}
+      </div>
+      <div class="sec-more"><a class="btn btn-ghost" href="/erga/">Όλα τα έργα και οι περιοχές <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+  <section id="process" class="process">
+    <div class="wrap">
+      <SectionHead tag="Διαδικασία" title="Πώς δουλεύουμε" text="Πέντε φάσεις με σαφή παραδοτέα. Ό,τι αλλάζει στην πορεία το συμφωνούμε γραπτά πριν γίνει." />
+      <ol class="steps">
+        {steps.map((s, i) => <li class="step"><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{s.title}</h3><p>{s.text}</p><span class="out">→ {s.out}</span></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <SectionHead tag="Ερωτήσεις" title="Συχνές ερωτήσεις" />
+      <div class="faq-list">
+        {faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
+
+<script>
+  import '../scripts/drawings';
+</script>

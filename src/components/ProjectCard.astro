@@ -1,0 +1,14 @@
+---
+import { catLabel, type Project } from '../data/projects';
+import { caps } from '../lib/text';
+interface Props { p: Project; wide?: boolean }
+const { p, wide = p.wide } = Astro.props;
+---
+<article class:list={['proj', { wide }]} data-c={p.cat}>
+  <div class="ph"><canvas data-seed={p.id} data-kind={p.kind} aria-hidden="true"></canvas><span class="tag">{caps(catLabel[p.cat])}</span></div>
+  <div class="proj-meta">
+    <h3>{p.title}</h3>
+    <p>{p.text}</p>
+    <p class="label where"><span>{p.place}</span><span>{p.year}</span></p>
+  </div>
+</article>

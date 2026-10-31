@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHead from '../components/SectionHead.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, steps } from '../data/site';
+---
+<Base title="Η εταιρεία" description="Η Contractor PNG ειδικεύεται στη συντήρηση, την επισκευή και την αναβάθμιση υφιστάμενων κτιρίων στην Αττική και στις Κυκλάδες.">
+  <PageHero crumbs={[{ href: '/', label: 'Αρχική' }, { label: 'Εταιρεία' }]} title="Η Contractor PNG" lead="Συντήρηση, επισκευή και αναβάθμιση υφιστάμενων κτιρίων στην Αττική και στις Κυκλάδες, με έναν υπεύθυνο από την αυτοψία μέχρι την παράδοση." />
+
+  <section>
+    <div class="wrap creds">
+      <div class="creds-copy">
+        <p>Η Contractor PNG ειδικεύεται στη συντήρηση, την επισκευή και την αναβάθμιση υφιστάμενων κτιρίων στην Αττική και στις Κυκλάδες. Δουλεύουμε με δικά μας συνεργεία και σταθερούς συνεργάτες ανά ειδικότητα, ώστε ένας άνθρωπος να είναι υπεύθυνος από την αυτοψία μέχρι την παράδοση.</p>
+        <p>Υπεύθυνος της εταιρείας είναι ο {site.owner}, {site.ownerRole}.</p>
+        <p>[Η ιστορία της εταιρείας, οι άνθρωποί της και φωτογραφίες της ομάδας στο εργοτάξιο.]</p>
+        <p class="label" style="margin-top:28px">Για ποιους δουλεύουμε</p>
+        <div class="clients">
+          <span>Ιδιοκτήτες κατοικιών</span><span>Διαχειρίσεις πολυκατοικιών</span><span>Εκπαιδευτήρια</span><span>Γραφεία</span><span>Ξενοδοχεία</span><span>Κατασκευαστικές εταιρείες</span>
+        </div>
+        <div class="quote-ph">[Χώρος για 2–3 πραγματικές αξιολογήσεις πελατών, π.χ. από το Google Business Profile. Δεν βάζουμε επινοημένες κριτικές.]</div>
+      </div>
+      <div class="badges">
+        <div class="badge"><b>Ένας υπεύθυνος</b><span>Από την αυτοψία μέχρι την παράδοση</span></div>
+        <div class="badge"><b>Αναλυτικά</b><span>Προσφορά ανά άρθρο, με ποσότητες και τιμές μονάδας</span></div>
+        <div class="badge"><b>Άδειες</b><span>Έγκριση εργασιών μικρής κλίμακας και ικριώματα</span></div>
+        <div class="badge"><b>Συνεργεία</b><span>Δικά μας συνεργεία και σταθεροί συνεργάτες ανά ειδικότητα</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="wrap">
+      <SectionHead tag="Διαδικασία" title="Πώς δουλεύουμε" text="Πέντε φάσεις με σαφή παραδοτέα. Ό,τι αλλάζει στην πορεία το συμφωνούμε γραπτά πριν γίνει." />
+      <ol class="steps">
+        {steps.map((s, i) => <li class="step"><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{s.title}</h3><p>{s.text}</p><span class="out">→ {s.out}</span></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>

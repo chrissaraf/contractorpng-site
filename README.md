@@ -1,28 +1,44 @@
 # Contractor PNG · εταιρικό site
 
 Το δημόσιο site της Contractor PNG (συντήρηση, επισκευή και αναβάθμιση κτιρίων), στο **contractorpng.gr**.
-Στατικό HTML/CSS/JS χωρίς build. Είναι τελείως χωριστό από την εφαρμογή (`app.contractorpng.gr`, repo `chrissaraf/contractorpng`).
+Χτίζεται με [Astro](https://astro.build) σε στατικές σελίδες και δημοσιεύεται στο GitHub Pages. Είναι τελείως χωριστό από την εφαρμογή (`app.contractorpng.gr`, repo `chrissaraf/contractorpng`).
 
-## Αρχεία
-- `index.html`: όλη η σελίδα.
-- `404.html`: σελίδα «δεν βρέθηκε».
-- `assets/`: λογότυπα (`logo-original.png`, `logo-white.png` για σκούρο φόντο, `mark-*.png` μόνο το σπίτι για την κεφαλίδα), `favicon.png`, `icon-180.png`.
-- `CNAME`: το domain για το GitHub Pages.
-- `robots.txt`, `sitemap.xml`.
+## Σελίδες
+| Διεύθυνση | Αρχείο |
+|---|---|
+| `/` | `src/pages/index.astro` |
+| `/ypiresies/` | `src/pages/ypiresies/index.astro` |
+| `/ypiresies/<υπηρεσία>/` (6 σελίδες) | `src/pages/ypiresies/[slug].astro` |
+| `/erga/` | `src/pages/erga.astro` |
+| `/etaireia/` | `src/pages/etaireia.astro` |
+| `/epikoinonia/` | `src/pages/epikoinonia.astro` |
+
+## Πού αλλάζουν τα κείμενα
+- `src/data/site.ts`: στοιχεία εταιρείας, μενού, αριθμοί, περιοχές, διαδικασία, συχνές ερωτήσεις, και ο διακόπτης `demo`.
+- `src/data/services.ts`: οι 6 υπηρεσίες με όλα τα κείμενα της σελίδας τους.
+- `src/data/projects.ts`: τα έργα. Κάθε έργο δείχνει σε ποιες υπηρεσίες ανήκει και εμφανίζεται και στη σελίδα τους.
+- Εμφάνιση: `src/styles/global.css`. Λογότυπα και εικονίδια: `public/assets/`.
+
+## Τοπικά
+```
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # βγάζει το site στο dist/
+```
+
+## Δημοσίευση
+Κάθε merge στο `main` τρέχει το `.github/workflows/deploy.yml`, που χτίζει και δημοσιεύει. Στις ρυθμίσεις του repo: Settings → Pages → Source = **GitHub Actions**. Το domain βρίσκεται στο `public/CNAME`.
 
 ## Κανόνες
 1. Όνομα πάντα «Contractor PNG», χωρίς «Ο.Ε.».
-2. Ελληνικά κεφαλαία **χωρίς τόνους**. Το `lang="el"` και το μικρό script στο τέλος του `index.html` μένουν.
+2. Ελληνικά κεφαλαία **χωρίς τόνους**. Το `lang="el"` και το `src/scripts/caps.ts` μένουν.
 3. Δεν επινοούμε αριθμούς, έργα, πιστοποιήσεις ή κριτικές. Ό,τι λείπει γράφεται σε `[αγκύλες]` ή μένει κρυφό.
-4. Ημερομηνίες 27/10/2026, ώρες 17:30.
-5. Κινητό: πεδία 16px, κουμπιά τουλάχιστον 44px, καμία οριζόντια κύλιση.
-6. Κείμενα από το ChatGPT ανά ενότητα: [HERO], [SERVICES], [PROJECTS], [PROCESS], [COMPANY], [FAQ], [CONTACT], [SEO], [ΠΡΟΤΑΣΗ].
-
-## Ροή αλλαγών
-Ένα PR ανά θέμα, προεπισκόπηση πριν από το merge, ο Χρήστος κάνει merge, το GitHub Pages δημοσιεύει τον κλάδο `main`.
+4. Στα έργα μόνο περιοχή και χρονιά: ποτέ ονόματα πελατών, διευθύνσεις, ποσά ή φωτογραφίες σπιτιών πελατών.
+5. Ημερομηνίες 27/10/2026, ώρες 17:30.
+6. Κινητό: πεδία 16px, κουμπιά τουλάχιστον 44px, καμία οριζόντια κύλιση.
+7. Κείμενα από το ChatGPT ανά ενότητα: [HERO], [SERVICES], [PROJECTS], [PROCESS], [COMPANY], [FAQ], [CONTACT], [SEO], [ΠΡΟΤΑΣΗ].
 
 ## Πριν από την κανονική δημοσίευση (τώρα: ΔΕΙΓΜΑ)
-- Να φύγουν η μπάρα `.demo-bar` και το `<meta name="robots" content="noindex, nofollow">`.
-- `robots.txt`: `Allow: /` και `Sitemap: https://contractorpng.gr/sitemap.xml`.
-- Να μπουν τα πραγματικά στοιχεία στις `[αγκύλες]` και στο schema.org (διεύθυνση, τηλέφωνο).
-- Η φόρμα να στέλνει email (π.χ. Formspree).
+- Στο `src/data/site.ts`: `demo: false` (φεύγουν η μπάρα ΔΕΙΓΜΑ και το noindex) και τα πραγματικά στοιχεία στο `contact`.
+- `public/robots.txt`: `Allow: /` και `Sitemap: https://contractorpng.gr/sitemap-index.xml`.
+- Η φόρμα να στέλνει email (π.χ. Formspree) στο `src/pages/epikoinonia.astro`.
