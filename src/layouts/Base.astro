@@ -21,7 +21,7 @@ interface Props {
 const { title, description = site.description, schema = [], noindex = false } = Astro.props;
 const fullTitle = title ? `${title} · ${site.name}` : `${site.name} · Συντήρηση, επισκευή και αναβάθμιση κτιρίων`;
 const canonical = new URL(Astro.url.pathname, site.url).href;
-const logo = new URL('/assets/logo-original.png', site.url).href;
+const logo = new URL('/assets/logo-512.png', site.url).href;
 // Share preview for Viber, WhatsApp, Facebook: 1200x630, content kept inside the centre square.
 const image = new URL('/assets/og-image.png', site.url).href;
 
@@ -63,8 +63,9 @@ const org = {
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Contractor PNG · Συντήρηση, επισκευή, αναβάθμιση κτιρίων">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
-  <link rel="apple-touch-icon" href="/assets/icon-180.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
+  <link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
+  <link rel="apple-touch-icon" href="/assets/icon-180.png?v=2">
   <link rel="sitemap" href="/sitemap-index.xml">
   <script type="application/ld+json" set:html={JSON.stringify([org, ...schema])} />
 </head>
