@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../data/site';
+---
+<Base title="Το αίτημα στάλθηκε" noindex>
+  <section>
+    <div class="wrap notfound">
+      <p class="label">Ευχαριστούμε</p>
+      <h1 style="font-size:clamp(44px,7vw,96px);text-transform:uppercase">Το αίτημα στάλθηκε</h1>
+      <p>Θα σας καλέσουμε σύντομα για να κανονίσουμε αυτοψία. Για κάτι επείγον, καλέστε μας στο <a href={site.contact.phoneHref}>{site.contact.phone}</a>.</p>
+      <div class="hero-cta"><a class="btn" href="/">Στην αρχική</a><a class="btn btn-ghost" href="/erga/">Δείτε τα έργα μας</a></div>
+    </div>
+  </section>
+</Base>

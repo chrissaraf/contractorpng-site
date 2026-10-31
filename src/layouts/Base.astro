@@ -32,6 +32,10 @@ const org = {
   logo: image,
   description: 'Συντήρηση, επισκευή και αναβάθμιση κτιρίων σε Αθήνα, Αττική και Κυκλάδες.',
   founder: { '@type': 'Person', name: site.ownerSchema, jobTitle: site.ownerRole },
+  telephone: '+30 213 040 2229',
+  email: site.contact.email,
+  address: { '@type': 'PostalAddress', streetAddress: site.contact.street, postalCode: site.contact.postcode, addressLocality: site.contact.city, addressCountry: 'GR' },
+  openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '16:00' },
   areaServed: site.areaServed.map((name, i) => ({ '@type': i === 0 ? 'AdministrativeArea' : 'Place', name })),
 };
 ---

@@ -1,5 +1,6 @@
 /* Technical-drawing look on light concrete. Colors come from the logo: black #1B1919, grey #8A8B89, white. */
 :root{
+  color-scheme:light;
   --bg:#EFEFED;        /* σελίδα: ανοιχτό μπετόν */
   --paper:#F8F8F7;     /* εναλλασσόμενες ζώνες */
   --card:#FFFFFF;      /* κεφαλίδα, κάρτες */
@@ -22,12 +23,6 @@
   --gut-l:max(16px, env(safe-area-inset-left,0px));
   --gut-r:max(16px, env(safe-area-inset-right,0px));
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#1E1D1D;--paper:#252424;--card:#2A2929;--soft:#2A2929;--ink:#ECECEA;--ink-2:#B3B3B0;--grey:#8A8B89;--grey-ink:#A6A7A4;
-  --line:#3B3A39;--grid:#2F2E2E;--btn:#ECECEA;--btn-ink:#1B1919;--foot:#161515;--foot-fg:#ECECEA;--foot-muted:#A6A7A4;color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#1E1D1D;--paper:#252424;--card:#2A2929;--soft:#2A2929;--ink:#ECECEA;--ink-2:#B3B3B0;--grey:#8A8B89;--grey-ink:#A6A7A4;
-  --line:#3B3A39;--grid:#2F2E2E;--btn:#ECECEA;--btn-ink:#1B1919;--foot:#161515;--foot-fg:#ECECEA;--foot-muted:#A6A7A4;color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-padding-top:96px}
@@ -289,3 +284,7 @@ footer .foot-bottom{border-top:1px solid rgba(255,255,255,.12)}
 
 /* 404 */
 .notfound{min-height:50vh;display:grid;align-content:center;gap:20px}
+
+/* Phone and email links: full 44px touch targets */
+.info .v a,footer .mono a{display:inline-flex;align-items:center;min-height:44px}
+footer .mono a{color:var(--foot-fg)}

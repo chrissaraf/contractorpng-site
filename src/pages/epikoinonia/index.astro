@@ -1,8 +1,8 @@
 ---
-import Base from '../layouts/Base.astro';
-import PageHero from '../components/PageHero.astro';
-import { site } from '../data/site';
-import { services } from '../data/services';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import { site } from '../../data/site';
+import { services } from '../../data/services';
 const c = site.contact;
 ---
 <Base title="Επικοινωνία" description="Ζητήστε προσφορά από την Contractor PNG για επισκευή, στεγάνωση, θερμοπρόσοψη ή ανακαίνιση. Θα σας καλέσουμε για αυτοψία.">
@@ -10,12 +10,16 @@ const c = site.contact;
   <section id="form" class="contact">
     <div class="wrap contact-grid">
       <div class="info">
-        <div><span class="label">Τηλέφωνο</span><p class="v">{c.phone}</p></div>
-        <div><span class="label">Email</span><p class="v">{c.email}</p></div>
+        <div><span class="label">Τηλέφωνο</span><p class="v"><a href={c.phoneHref}>{c.phone}</a></p></div>
+        <div><span class="label">Email</span><p class="v"><a href={`mailto:${c.email}`}>{c.email}</a></p></div>
         <div><span class="label">Γραφεία</span><p class="v">{c.address}</p></div>
         <div><span class="label">Ωράριο</span><p class="v">{c.hours}</p></div>
       </div>
-      <form id="quote" novalidate>
+      <form id="quote" action={`https://formsubmit.co/${c.email}`} method="POST">
+        <input type="hidden" name="_subject" value="Νέο αίτημα προσφοράς από το contractorpng.gr">
+        <input type="hidden" name="_next" value="https://contractorpng.gr/epikoinonia/stalthike/">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field"><label for="q-name">Ονοματεπώνυμο</label><input id="q-name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="q-phone">Τηλέφωνο</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
         <div class="field"><label for="q-type">Τύπος έργου</label>
@@ -27,20 +31,14 @@ const c = site.contact;
         <div class="field"><label for="q-area">Περιοχή</label><input id="q-area" name="area" placeholder="Πόλη / περιοχή"></div>
         <div class="field full"><label for="q-msg">Περιγραφή έργου</label><textarea id="q-msg" name="msg" placeholder="Τετραγωνικά, επιθυμητή ημερομηνία έναρξης, ό,τι άλλο θεωρείτε σημαντικό"></textarea></div>
         <div class="form-foot"><small>Τα στοιχεία σας χρησιμοποιούνται μόνο για να σας απαντήσουμε.</small><button class="btn" type="submit">Αποστολή αιτήματος</button></div>
-        <p class="sent" id="q-sent" hidden>Στο δείγμα η φόρμα δεν αποστέλλει τίποτα. Στο τελικό site το αίτημα θα έρχεται κατευθείαν στο email της εταιρείας.</p>
       </form>
     </div>
   </section>
 </Base>
 
 <script>
-  // Preselect the project type when coming from a service page (?t=...). Demo form: nothing is sent yet.
+  // Preselect the project type when coming from a service page (?t=...).
   const sel = document.querySelector<HTMLSelectElement>('#q-type');
   const t = new URLSearchParams(location.search).get('t');
   if (sel && t && [...sel.options].some((o) => o.text === t)) sel.value = t;
-  const form = document.querySelector<HTMLFormElement>('#quote');
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    document.querySelector<HTMLElement>('#q-sent')!.hidden = false;
-  });
 </script>

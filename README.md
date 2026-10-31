@@ -38,7 +38,8 @@ npm run build    # βγάζει το site στο dist/
 6. Κινητό: πεδία 16px, κουμπιά τουλάχιστον 44px, καμία οριζόντια κύλιση.
 7. Κείμενα από το ChatGPT ανά ενότητα: [HERO], [SERVICES], [PROJECTS], [PROCESS], [COMPANY], [FAQ], [CONTACT], [SEO], [ΠΡΟΤΑΣΗ].
 
-## Πριν από την κανονική δημοσίευση (τώρα: ΔΕΙΓΜΑ)
-- Στο `src/data/site.ts`: `demo: false` (φεύγουν η μπάρα ΔΕΙΓΜΑ και το noindex) και τα πραγματικά στοιχεία στο `contact`.
-- `public/robots.txt`: `Allow: /` και `Sitemap: https://contractorpng.gr/sitemap-index.xml`.
-- Η φόρμα να στέλνει email (π.χ. Formspree) στο `src/pages/epikoinonia.astro`.
+## Φόρμα επικοινωνίας
+Η φόρμα στέλνει μέσω του δωρεάν FormSubmit στο email της εταιρείας (`src/data/site.ts`). Την πρώτη φορά το FormSubmit στέλνει email ενεργοποίησης: πατάμε «Activate» και από εκεί και πέρα τα αιτήματα έρχονται κανονικά. Μετά την αποστολή ο επισκέπτης βλέπει τη σελίδα `/epikoinonia/stalthike/`.
+
+## Εμφάνιση
+Μόνο φωτεινό θέμα, ακόμα κι αν η συσκευή είναι σε σκούρα λειτουργία.
