@@ -1,0 +1,13 @@
+---
+import type { Service } from '../data/services';
+interface Props { s: Service }
+const { s } = Astro.props;
+---
+<a class="svc" href={`/ypiresies/${s.slug}/`}>
+  <div class="code"><span>{s.code}</span><span>{s.kicker}</span></div>
+  <svg viewBox="0 0 44 44" aria-hidden="true"><path d={s.icon} /></svg>
+  <h3>{s.title}</h3>
+  <p>{s.short}</p>
+  <ul>{s.includes.slice(0, 3).map((i) => <li>{i}</li>)}</ul>
+  <span class="more">Περισσότερα <span aria-hidden="true">→</span></span>
+</a>

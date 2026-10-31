@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { projects } from '../data/projects';
+import { areas } from '../data/site';
+---
+<Base title="Έργα" description="Πρόσφατα έργα της Contractor PNG σε Αττική, Σέριφο, Σίφνο και Πελοπόννησο: επισκευές, ανακαινίσεις και νέες κατασκευές.">
+  <PageHero crumbs={[{ href: '/', label: 'Αρχική' }, { label: 'Έργα' }]} title="Έργα" lead="Μερικά από τα έργα που μας εμπιστεύτηκαν τα δύο τελευταία χρόνια, σε σχέδιο. Από σεβασμό στους πελάτες μας δεν δημοσιεύουμε ονόματα, διευθύνσεις ούτε φωτογραφίες των σπιτιών τους." />
+  <section class="projects">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Φίλτρο έργων">
+        <button type="button" data-f="all" aria-pressed="true">Όλα</button>
+        <button type="button" data-f="rep" aria-pressed="false">Επισκευές</button>
+        <button type="button" data-f="ren" aria-pressed="false">Ανακαινίσεις</button>
+        <button type="button" data-f="new" aria-pressed="false">Κατασκευές</button>
+      </div>
+      <div class="proj-grid">
+        {projects.map((p) => <ProjectCard p={p} />)}
+      </div>
+      <div class="areas">
+        <div class="label">Πού δουλεύουμε</div>
+        <ul>{areas.map((a) => <li><b>{a.region}:</b> {a.places}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>
+
+<script>
+  import '../scripts/drawings';
+</script>

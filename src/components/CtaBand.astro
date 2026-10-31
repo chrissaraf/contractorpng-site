@@ -1,0 +1,13 @@
+---
+interface Props { title?: string; text?: string }
+const { title = 'Έχετε ένα έργο στο μυαλό σας;', text = 'Περιγράψτε μας τι χρειάζεστε και θα σας καλέσουμε για να κανονίσουμε αυτοψία.' } = Astro.props;
+---
+<div class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>{title}</h2>
+      <p>{text}</p>
+    </div>
+    <a class="btn" href="/epikoinonia/#form">Ζητήστε προσφορά <span aria-hidden="true">→</span></a>
+  </div>
+</div>

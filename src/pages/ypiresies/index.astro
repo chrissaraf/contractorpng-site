@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { services } from '../../data/services';
+---
+<Base title="Υπηρεσίες" description="Επισκευή όψεων και φέροντος, στεγανώσεις, ενεργειακή αναβάθμιση, ανακαινίσεις, γυψοσανίδες και Η/Μ, πέτρινες κατοικίες στις Κυκλάδες.">
+  <PageHero crumbs={[{ href: '/', label: 'Αρχική' }, { label: 'Υπηρεσίες' }]} title="Υπηρεσίες" lead="Αναλαμβάνουμε από μία στεγάνωση μέχρι την πλήρη ανακαίνιση ενός κτιρίου, με δικά μας συνεργεία και σταθερούς συνεργάτες για κάθε ειδικότητα. Διαλέξτε μια υπηρεσία για να δείτε τι περιλαμβάνει." />
+  <section>
+    <div class="wrap">
+      <div class="services">
+        {services.map((s) => <ServiceCard s={s} />)}
+      </div>
+    </div>
+  </section>
+  <CtaBand />
+</Base>

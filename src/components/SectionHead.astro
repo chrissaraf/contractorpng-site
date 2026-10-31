@@ -1,0 +1,11 @@
+---
+interface Props { tag: string; title: string; text?: string }
+const { tag, title, text } = Astro.props;
+---
+<div class="sec-head">
+  <div class="sec-tag label">{tag}</div>
+  <div>
+    <h2>{title}</h2>
+    {text && <p>{text}</p>}
+  </div>
+</div>
