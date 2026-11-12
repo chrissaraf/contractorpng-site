@@ -12,6 +12,7 @@
 | `/erga/` | `src/pages/erga.astro` |
 | `/etaireia/` | `src/pages/etaireia.astro` |
 | `/epikoinonia/` | `src/pages/epikoinonia.astro` |
+| `/aporrito/` (πολιτική απορρήτου, χρειάζεται για τη σύνδεση Google του n8n) | `src/pages/aporrito.astro` |
 
 ## Πού αλλάζουν τα κείμενα
 - `src/data/site.ts`: στοιχεία εταιρείας, μενού, αριθμοί, περιοχές, διαδικασία, συχνές ερωτήσεις, και ο διακόπτης `demo`.
