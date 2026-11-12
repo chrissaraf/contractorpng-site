@@ -5,9 +5,37 @@ import ProjectCard from '../components/ProjectCard.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { projects } from '../data/projects';
 import { areas } from '../data/site';
+// «Πριν και μετά»: ό,τι ενέκρινε ο Χρήστος ένα-ένα στην εφαρμογή (scripts/fetch-gallery.mjs, πριν από κάθε build)
+type Pic = { src: string; w: number; h: number };
+type Pair = { id: string; cap: string; year: number | null; b: Pic; a: Pic };
+let pairs: Pair[] = [];
+// glob: χωρίς σφάλμα αν το αρχείο δεν υπάρχει ακόμα (π.χ. «npm run dev» χωρίς «npm run gallery»)
+const g = Object.values(import.meta.glob('../data/gallery.json', { eager: true, import: 'default' }))[0];
+if (Array.isArray(g)) pairs = g as Pair[];
+const lead = pairs.length
+  ? 'Μερικά από τα έργα που μας εμπιστεύτηκαν τα δύο τελευταία χρόνια. Από σεβασμό στους πελάτες μας δεν δημοσιεύουμε ονόματα ούτε διευθύνσεις.'
+  : 'Μερικά από τα έργα που μας εμπιστεύτηκαν τα δύο τελευταία χρόνια, σε σχέδιο. Από σεβασμό στους πελάτες μας δεν δημοσιεύουμε ονόματα, διευθύνσεις ούτε φωτογραφίες των σπιτιών τους.';
 ---
 <Base title="Έργα" description="Πρόσφατα έργα της Contractor PNG σε Αττική, Σέριφο, Σίφνο και Πελοπόννησο: επισκευές, ανακαινίσεις και νέες κατασκευές.">
-  <PageHero crumbs={[{ href: '/', label: 'Αρχική' }, { label: 'Έργα' }]} title="Έργα" lead="Μερικά από τα έργα που μας εμπιστεύτηκαν τα δύο τελευταία χρόνια, σε σχέδιο. Από σεβασμό στους πελάτες μας δεν δημοσιεύουμε ονόματα, διευθύνσεις ούτε φωτογραφίες των σπιτιών τους." />
+  <PageHero crumbs={[{ href: '/', label: 'Αρχική' }, { label: 'Έργα' }]} title="Έργα" lead={lead} />
+  {pairs.length > 0 && (
+    <section class="ba" aria-labelledby="ba-h">
+      <div class="wrap">
+        <h2 id="ba-h">Πριν και μετά</h2>
+        <div class="ba-grid">
+          {pairs.map((x) => (
+            <figure class="ba-item">
+              <div class="ba-pics">
+                <div class="ba-ph"><img src={x.b.src} width={x.b.w} height={x.b.h} alt={'Πριν: ' + x.cap} loading="lazy" decoding="async" /><span class="tag">ΠΡΙΝ</span></div>
+                <div class="ba-ph"><img src={x.a.src} width={x.a.w} height={x.a.h} alt={'Μετά: ' + x.cap} loading="lazy" decoding="async" /><span class="tag">ΜΕΤΑ</span></div>
+              </div>
+              <figcaption class="proj-meta"><p class="ba-cap">{x.cap}</p>{x.year && <p class="label">{x.year}</p>}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
   <section class="projects">
     <div class="wrap">
       <div class="filters" role="group" aria-label="Φίλτρο έργων">
