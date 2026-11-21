@@ -9,6 +9,7 @@ import { services } from '../../data/services';
   <PageHero crumbs={[{ href: '/', label: 'Αρχική' }, { label: 'Υπηρεσίες' }]} title="Υπηρεσίες" lead="Αναλαμβάνουμε από μία στεγάνωση μέχρι την πλήρη ανακαίνιση ενός κτιρίου, με δικά μας συνεργεία και σταθερούς συνεργάτες για κάθε ειδικότητα. Διαλέξτε μια υπηρεσία για να δείτε τι περιλαμβάνει." />
   <section>
     <div class="wrap">
+      <h2 class="sr-only">Όλες οι υπηρεσίες</h2>
       <div class="services">
         {services.map((s) => <ServiceCard s={s} />)}
       </div>

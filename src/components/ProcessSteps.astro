@@ -1,0 +1,15 @@
+---
+// «Πώς δουλεύουμε»: οι πέντε φάσεις, ίδιες στην αρχική και στην Εταιρεία.
+import SectionHead from './SectionHead.astro';
+import { steps } from '../data/site';
+interface Props { id?: string }
+const { id } = Astro.props;
+---
+<section id={id} class="process">
+  <div class="wrap">
+    <SectionHead tag="Διαδικασία" title="Πώς δουλεύουμε" text="Πέντε φάσεις με σαφή παραδοτέα. Ό,τι αλλάζει στην πορεία το συμφωνούμε γραπτά πριν γίνει." />
+    <ol class="steps">
+      {steps.map((s, i) => <li class="step"><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{s.title}</h3><p>{s.text}</p><span class="out">→ {s.out}</span></li>)}
+    </ol>
+  </div>
+</section>

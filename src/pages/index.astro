@@ -5,7 +5,8 @@ import SectionHead from '../components/SectionHead.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import CtaBand from '../components/CtaBand.astro';
-import { stats, steps, faq } from '../data/site';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import { site, stats, faq } from '../data/site';
 import { services } from '../data/services';
 import { projects } from '../data/projects';
 
@@ -25,6 +26,7 @@ const faqSchema = {
         <p class="hero-lead">Επισκευές όψεων και φέροντος, στεγανώσεις, θερμοπροσόψεις και ανακαινίσεις για κατοικίες, πολυκατοικίες και επαγγελματικούς χώρους. Αναλυτική προσφορά ανά εργασία και ένας υπεύθυνος από την αυτοψία ως την παράδοση.</p>
         <div class="hero-cta">
           <a class="btn" href="/epikoinonia/#form">Ζητήστε προσφορά <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href={site.contact.phoneHref}>Καλέστε {site.contact.phone}</a>
           <a class="btn btn-ghost" href="/erga/">Δείτε τα έργα μας</a>
         </div>
       </div>
@@ -56,14 +58,7 @@ const faqSchema = {
     </div>
   </section>
 
-  <section id="process" class="process">
-    <div class="wrap">
-      <SectionHead tag="Διαδικασία" title="Πώς δουλεύουμε" text="Πέντε φάσεις με σαφή παραδοτέα. Ό,τι αλλάζει στην πορεία το συμφωνούμε γραπτά πριν γίνει." />
-      <ol class="steps">
-        {steps.map((s, i) => <li class="step"><span class="n">{String(i + 1).padStart(2, '0')}</span><h3>{s.title}</h3><p>{s.text}</p><span class="out">→ {s.out}</span></li>)}
-      </ol>
-    </div>
-  </section>
+  <ProcessSteps id="process" />
 
   <section id="faq" class="faq">
     <div class="wrap">
