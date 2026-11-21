@@ -1,17 +1,18 @@
 ---
-import { nav } from '../data/site';
+import { nav, site } from '../data/site';
 const path = Astro.url.pathname;
 const isCurrent = (href: string) => path === href || path.startsWith(href);
 ---
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/" aria-label="Contractor PNG, αρχική">
+    <a class="brand" href="/">
       <img class="brand-mark" src="/assets/mark.svg" alt="" width="157" height="100">
       <span class="brand-name">Contractor PNG<small>ΣΥΝΤΗΡΗΣΗ · ΕΠΙΣΚΕΥΗ · ΑΝΑΒΑΘΜΙΣΗ</small></span>
     </a>
     <ul id="nav-links">
       {nav.map((n) => <li><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
     </ul>
+    <a class="btn btn-ghost call" href={site.contact.phoneHref} aria-label={`Κλήση ${site.contact.phone}`}><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6.6 2.5 4 3.3c-.9.3-1.4 1.2-1.2 2.1 1.3 5.4 5.4 9.5 10.8 10.8.9.2 1.8-.3 2.1-1.2l.8-2.6-3.6-1.6-1.6 1.6c-2-.9-3.6-2.5-4.5-4.5L8.4 6.3z"/></svg><span class="call-n">{site.contact.phone}</span></a>
     <a class="btn" href="/epikoinonia/#form"><span class="full">Ζητήστε προσφορά</span><span class="short">Προσφορά</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Μενού"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16"/></svg></button>
   </div>

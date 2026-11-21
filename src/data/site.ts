@@ -1,4 +1,4 @@
-// Company details in one place. Empty afm/gemi stay hidden until Christos sends them.
+// Company details in one place. Empty afm/gemi stay hidden until Christos sends them (footer shows them when filled).
 // While demo is true the site carries noindex and the ΔΕΙΓΜΑ bar.
 export const site = {
   name: 'Contractor PNG',
@@ -24,6 +24,10 @@ export const site = {
   },
   areaServed: ['Αττική', 'Σέριφος', 'Σίφνος', 'Αίγινα'],
 };
+
+// Πραγματικές αξιολογήσεις πελατών (π.χ. από το Google Business Profile), αυτούσιες και με τη συναίνεσή τους.
+// Όσο είναι κενό, η ενότητα δεν εμφανίζεται. Ποτέ επινοημένες κριτικές.
+export const reviews: { text: string; who: string; source: string }[] = [];
 
 export const nav = [
   { href: '/ypiresies/', label: 'Υπηρεσίες' },

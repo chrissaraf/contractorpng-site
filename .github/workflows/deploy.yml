@@ -30,7 +30,11 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # τύποι και σφάλματα στα αρχεία Astro
+      - run: npm run check
       - run: npm run build
+      # σπασμένοι σύνδεσμοι/άγκυρες και κείμενα-κενά σε [αγκύλες] στο έτοιμο site
+      - run: npm run check:dist
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:

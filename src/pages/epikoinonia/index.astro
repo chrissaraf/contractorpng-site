@@ -22,6 +22,7 @@ const c = site.contact;
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field"><label for="q-name">Ονοματεπώνυμο</label><input id="q-name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="q-phone">Τηλέφωνο</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field full"><label for="q-email">Email (προαιρετικά)</label><input id="q-email" name="email" type="email" autocomplete="email" inputmode="email"></div>
         <div class="field"><label for="q-type">Τύπος έργου</label>
           <select id="q-type" name="type">
             {services.map((s) => <option>{s.formType}</option>)}
@@ -30,7 +31,7 @@ const c = site.contact;
         </div>
         <div class="field"><label for="q-area">Περιοχή</label><input id="q-area" name="area" placeholder="Πόλη / περιοχή"></div>
         <div class="field full"><label for="q-msg">Περιγραφή έργου</label><textarea id="q-msg" name="msg" placeholder="Τετραγωνικά, επιθυμητή ημερομηνία έναρξης, ό,τι άλλο θεωρείτε σημαντικό"></textarea></div>
-        <div class="form-foot"><small>Τα στοιχεία σας χρησιμοποιούνται μόνο για να σας απαντήσουμε.</small><button class="btn" type="submit">Αποστολή αιτήματος</button></div>
+        <div class="form-foot"><small>Τα στοιχεία σας χρησιμοποιούνται μόνο για να σας απαντήσουμε. <a href="/aporrito/">Πολιτική απορρήτου</a></small><button class="btn" type="submit">Αποστολή αιτήματος</button></div>
       </form>
     </div>
   </section>
