@@ -1,0 +1,762 @@
+[
+ {
+  "name": "gr-anaptyxi",
+  "dept": "product",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Υπεύθυνος ανάπτυξης με νοοτροπία μετόχου. Βρίσκει και ιεραρχεί ευκαιρίες για περισσότερα έσοδα ή πελάτες (νέα κοινά, τιμολόγηση, πακέτα, συνεργασίες, νέες εφαρμογές από ό,τι ήδη υπάρχει), μετρά τι απέδωσαν οι προηγούμενες κινήσεις και προτε"
+ },
+ {
+  "name": "gr-antilogos",
+  "dept": "product",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Ο κριτικός της εταιρείας (ο «αντίλογος»). Ελέγχει ένα σχέδιο, μια πρόταση ή μια απόφαση πριν πάει στον χρήστη: βρίσκει τι δεν στέκει, τι λείπει και πώς μπορεί να αποτύχει, και προτείνει καλύτερη εναλλακτική. Use PROACTIVELY πριν από μεγάλη "
+ },
+ {
+  "name": "product-manager",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Ιδιοκτήτης προϊόντος: τι χτίζουμε και γιατί, roadmap, μέτρηση αποτελέσματος. Πρώτη επιλογή της κατεύθυνσης Προϊόν στη Φάση 1."
+ },
+ {
+  "name": "product-sprint-prioritizer",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Προτεραιότητες: ποιο αίτημα ή λειτουργία πρώτο και τι χωράει στον επόμενο κύκλο (RICE κ.ά.)."
+ },
+ {
+  "name": "product-trend-researcher",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Τάσεις αγοράς και ανταγωνιστές για μία ιδέα ή κατηγορία, με πηγές. Όχι για επιχειρηματικό μοντέλο (→ business-strategist)."
+ },
+ {
+  "name": "product-feedback-synthesizer",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Σχόλια πελατών (email, κριτικές, υποστήριξη) σε θέματα και προτεραιότητες. Όχι για αριθμούς πωλήσεων (→ gr-poliseis-pelates)."
+ },
+ {
+  "name": "business-strategist",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Στρατηγική σε βάθος: επιχειρηματικό μοντέλο, είσοδος σε νέα αγορά, θέση απέναντι στον ανταγωνισμό. Για ιεράρχηση ευκαιριών και το μηνιαίο συμβούλιο → gr-anaptyxi."
+ },
+ {
+  "name": "specialized-pricing-analyst",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Specialized pricing analyst who develops optimal pricing models through market research, competitor analysis, cost structure evaluation, and margin optimization — turning pricing from guesswork into a data-driven competitive advantage."
+ },
+ {
+  "name": "research-synthesist",
+  "dept": "product",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Σύνθεση πολλών πηγών ή μελετών σε ό,τι πραγματικά στηρίζουν τα στοιχεία, με βάρος ανά πηγή."
+ },
+ {
+  "name": "design-ux-researcher",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction"
+ },
+ {
+  "name": "design-ux-architect",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance"
+ },
+ {
+  "name": "design-ui-designer",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Creates beautiful, consistent, accessible user interfaces that enhance UX and reflect brand identity"
+ },
+ {
+  "name": "design-brand-guardian",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning"
+ },
+ {
+  "name": "design-ui-finish-gate-reviewer",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Product-interface reviewer who catches generic, interchangeable UI before it ships by grounding critique in real product evidence, a written design contract, and a hard implementation finish gate."
+ },
+ {
+  "name": "design-persona-walkthrough",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective — captures emotional reactions and rational thought at each scroll position, then delivers structured CRO reports grounded in LIFT, Cialdini, an"
+ },
+ {
+  "name": "design-visual-storyteller",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect wi"
+ },
+ {
+  "name": "design-inclusive-visuals-specialist",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Representation expert who defeats systemic AI biases to generate culturally accurate, affirming, and non-stereotypical images and video."
+ },
+ {
+  "name": "design-image-prompt-engineer",
+  "dept": "design",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography t"
+ },
+ {
+  "name": "gr-ellinika-keimena",
+  "dept": "design",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Ελληνικά κείμενα οθονών (κουμπιά, μηνύματα, σφάλματα, email, ειδοποιήσεις). Use PROACTIVELY όταν προστίθεται ή αλλάζει κείμενο που βλέπει ο χρήστης σε ελληνική εφαρμογή."
+ },
+ {
+  "name": "planner",
+  "dept": "architecture",
+  "source": "ecc",
+  "writes": false,
+  "model": "opus",
+  "desc": "Σχέδιο υλοποίησης βήμα-βήμα (ποια αρχεία, με ποια σειρά, ρίσκα) για λειτουργία ή αλλαγή σε 2+ αρχεία, πριν γραφτεί κώδικας. Όχι για επιλογή αρχιτεκτονικής (→ architect)."
+ },
+ {
+  "name": "architect",
+  "dept": "architecture",
+  "source": "ecc",
+  "writes": false,
+  "model": "opus",
+  "desc": "Αποφάσεις αρχιτεκτονικής σε υπάρχουσα εφαρμογή: δομή, κλιμάκωση, ανταλλάγματα, καταγραφή απόφασης (ADR). Πριν από αλλαγή δομής. Όχι για νέα εφαρμογή από το μηδέν (→ engineering-software-architect) ούτε για βήματα υλοποίησης (→ planner)."
+ },
+ {
+  "name": "code-explorer",
+  "dept": "architecture",
+  "source": "ecc",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Χαρτογραφεί πώς δουλεύει ο υπάρχων κώδικας μιας λειτουργίας (ροή εκτέλεσης, επίπεδα, εξαρτήσεις) πριν από διόρθωση ή αλλαγή. Μόνο διαβάζει· δεν προτείνει αρχιτεκτονική (→ architect)."
+ },
+ {
+  "name": "engineering-software-architect",
+  "dept": "architecture",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Αρχιτεκτονική νέας εφαρμογής ή μεγάλου νέου υποσυστήματος στη Φάση 1: όρια πεδίων (DDD), μοτίβα, επιλογή τεχνολογιών. Όχι για αλλαγή σε υπάρχοντα κώδικα (→ architect)."
+ },
+ {
+  "name": "engineering-backend-architect",
+  "dept": "architecture",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Σχέδιο server: βάση δεδομένων και σχήμα, εσωτερικά API, ουρές, υποδομή cloud. Όταν η απόφαση αφορά κυρίως το backend. Όχι για δημόσιο API προς τρίτους (→ engineering-api-platform-engineer)."
+ },
+ {
+  "name": "engineering-api-platform-engineer",
+  "dept": "architecture",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Δημόσιο API ή API για συνεργάτες: συμβόλαιο OpenAPI, εκδόσεις και απόσυρση, όρια χρήσης, SDK. Μόνο όταν η εφαρμογή δίνει API σε τρίτους."
+ },
+ {
+  "name": "tdd-guide",
+  "dept": "dev",
+  "source": "ecc",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Test-Driven Development specialist enforcing write-tests-first methodology. Use PROACTIVELY when writing new features, fixing bugs, or refactoring code. Ensures 80%+ test coverage."
+ },
+ {
+  "name": "build-error-resolver",
+  "dept": "dev",
+  "source": "ecc",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly."
+ },
+ {
+  "name": "refactor-cleaner",
+  "dept": "dev",
+  "source": "ecc",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Καθάρισμα νεκρού κώδικα, διπλοτύπων και αχρησιμοποίητων εξαρτήσεων (knip, depcheck, ts-prune). Μόνο όταν ζητηθεί καθάρισμα, όχι μέσα σε άλλη εργασία."
+ },
+ {
+  "name": "engineering-frontend-developer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization"
+ },
+ {
+  "name": "engineering-senior-developer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Γενική υλοποίηση λειτουργιών full-stack όταν δεν ταιριάζει πιο ειδικός agent της Ανάπτυξης. Η πηγή του έχει έμφαση σε Laravel/Livewire, προχωρημένο CSS και Three.js: σε άλλες τεχνολογίες ακολουθεί τις συμβάσεις της εφαρμογής."
+ },
+ {
+  "name": "engineering-minimal-change-engineer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Διόρθωση ή αλλαγή με το μικρότερο δυνατό diff, χωρίς αναδιάρθρωση και χωρίς «παράπλευρες» βελτιώσεις. Όταν το ζητούμενο είναι στενό. Γράψιμο tests πρώτα: tdd-guide."
+ },
+ {
+  "name": "engineering-mobile-app-builder",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks"
+ },
+ {
+  "name": "engineering-database-optimizer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Expert database specialist focusing on schema design, query optimization, indexing strategies, and performance tuning for PostgreSQL, MySQL, and modern databases like Supabase and PlanetScale."
+ },
+ {
+  "name": "engineering-payments-billing-engineer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment flows, webhook processing, subscription billing, SCA/3DS, PCI scope reduction, and financial reconciliation."
+ },
+ {
+  "name": "engineering-pdf-engine-architect",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Architect and specialist in deterministic HTML-to-PDF document compilation, Playwright browser context pools, dynamic Euclidean page sizing, LayoutNG subpixel budgeting, tagged PDF (PDF/UA-1 & PDF/A-2b), and 1:1 sheet canvas editors."
+ },
+ {
+  "name": "engineering-i18n-engineer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Expert i18n engineer for ICU MessageFormat, CLDR plural rules, RTL and bidirectional layouts, locale-aware date/number/currency formatting, string extraction pipelines, and pseudo-localization testing."
+ },
+ {
+  "name": "engineering-ai-engineer",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical,"
+ },
+ {
+  "name": "engineering-rapid-prototyper",
+  "dept": "dev",
+  "source": "agency",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "Γρήγορο πρωτότυπο ή MVP για να δοκιμαστεί μια ιδέα, σε χωριστό κλάδο ή φάκελο. Όχι για κώδικα που πάει σε παραγωγή (→ tdd-guide και κανονική ροή)."
+ },
+ {
+  "name": "code-reviewer",
+  "dept": "qa",
+  "source": "ecc",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes."
+ },
+ {
+  "name": "typescript-reviewer",
+  "dept": "qa",
+  "source": "ecc",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Έλεγχος αλλαγών σε TypeScript/JavaScript σε βάθος (τύποι, async, ασφάλεια Node). Επιπλέον του code-reviewer μόνο σε μεγάλες ή ευαίσθητες αλλαγές TS/JS, όχι σε κάθε αλλαγή."
+ },
+ {
+  "name": "silent-failure-hunter",
+  "dept": "qa",
+  "source": "ecc",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Review code for silent failures, swallowed errors, bad fallbacks, and missing error propagation."
+ },
+ {
+  "name": "pr-test-analyzer",
+  "dept": "qa",
+  "source": "ecc",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Review pull request test coverage quality and completeness, with emphasis on behavioral coverage and real bug prevention."
+ },
+ {
+  "name": "e2e-runner",
+  "dept": "qa",
+  "source": "ecc",
+  "writes": true,
+  "model": "sonnet",
+  "desc": "End-to-end testing specialist using Vercel Agent Browser (preferred) with Playwright fallback. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshot"
+ },
+ {
+  "name": "testing-reality-checker",
+  "dept": "qa",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Τελικός έλεγχος πριν από merge ή κυκλοφορία, με όλες τις αναφορές ως στοιχεία· ξεκινά από «NEEDS WORK». Για κριτική σε σχέδιο ή απόφαση πριν υλοποιηθεί → gr-antilogos."
+ },
+ {
+  "name": "testing-evidence-collector",
+  "dept": "qa",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Screenshot-obsessed, fantasy-allergic QA specialist - Reports reproducible issues with evidence and marks untested scope honestly"
+ },
+ {
+  "name": "testing-accessibility-auditor",
+  "dept": "qa",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers — if it's not tested with a screen reader, it's not accessible."
+ },
+ {
+  "name": "testing-api-tester",
+  "dept": "qa",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations"
+ },
+ {
+  "name": "testing-performance-benchmarker",
+  "dept": "qa",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure"
+ },
+ {
+  "name": "testing-test-results-analyzer",
+  "dept": "qa",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Ανάλυση αποτελεσμάτων από runs tests/CI: τι αποτυγχάνει επανειλημμένα, ασταθή tests, τάσεις ποιότητας. Όχι για την κάλυψη ενός PR (→ pr-test-analyzer)."
+ },
+ {
+  "name": "security-reviewer",
+  "dept": "security",
+  "source": "ecc",
+  "writes": false,
+  "model": "opus",
+  "desc": "Έλεγχος ασφαλείας μιας αλλαγής κώδικα (OWASP Top 10, μυστικά, injection, SSRF, σύνδεση). Ο πρώτος της Ασφάλειας σε κάθε αλλαγή που αγγίζει server, σύνδεση, εισαγωγές, πληρωμές ή προσωπικά δεδομένα."
+ },
+ {
+  "name": "security-appsec-engineer",
+  "dept": "security",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Ασφάλεια ως διαδικασία: threat model ανά λειτουργία, SAST/DAST στο CI, κανόνες ασφαλούς κώδικα για την ομάδα. Όχι για έλεγχο ενός diff (→ security-reviewer)."
+ },
+ {
+  "name": "security-architect",
+  "dept": "security",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Μοντέλο ασφαλείας σε επίπεδο σχεδίου: όρια εμπιστοσύνης, threat model, άμυνα σε βάθος, για νέα εφαρμογή ή μεγάλη αλλαγή δομής. Τον έλεγχο κώδικα τον κάνει ο security-reviewer."
+ },
+ {
+  "name": "security-secrets-credential-engineer",
+  "dept": "security",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Owns the full lifecycle of secrets and credentials — detection, prevention, vaulting, rotation, and leak response — so an application runs on short-lived, least-privilege credentials that are never in the code and are already rotated by the"
+ },
+ {
+  "name": "security-ai-generated-code-auditor",
+  "dept": "security",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Πλήρης σάρωση repo γραμμένου κυρίως από AI (μυστικά μέσα στον κώδικα, σπασμένο row-level security, prompt injection), π.χ. πριν από την κυκλοφορία. Όχι για ένα diff (→ security-reviewer)."
+ },
+ {
+  "name": "security-penetration-tester",
+  "dept": "security",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications, and cloud infrastructure."
+ },
+ {
+  "name": "engineering-privacy-engineer",
+  "dept": "security",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Πώς υλοποιείται η ιδιωτικότητα στον κώδικα: εντοπισμός προσωπικών δεδομένων, ελαχιστοποίηση, συγκατάθεση, διαγραφή/εξαγωγή, διατήρηση. Δίνει σχέδιο· τον κώδικα τον γράφει η Ανάπτυξη. Νομική βάση: gr-nomikos."
+ },
+ {
+  "name": "gr-nomikos",
+  "dept": "legal",
+  "source": "gr",
+  "writes": false,
+  "model": "opus",
+  "desc": "Νομικά θέματα εφαρμογής στην Ελλάδα και την ΕΕ (GDPR και προσωπικά δεδομένα, όροι χρήσης, πολιτική απορρήτου, cookies, συμβάσεις με πελάτες/συνεργάτες, δεδομένα εργαζομένων, ηλεκτρονικό εμπόριο). Use PROACTIVELY όταν μια λειτουργία συλλέγει"
+ },
+ {
+  "name": "support-legal-compliance-checker",
+  "dept": "legal",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Συμμόρφωση εκτός Ελλάδας/ΕΕ ή σε πολλές χώρες (π.χ. CCPA, κλαδικοί κανόνες). Για Ελλάδα και ΕΕ πρώτα ο gr-nomikos."
+ },
+ {
+  "name": "legal-document-review",
+  "dept": "legal",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Έλεγχος συγκεκριμένου νομικού κειμένου (σύμβαση, όροι, συμφωνητικό): ρίσκα, ρήτρες, σύγκριση εκδοχών. Για το τι υποχρεώσεις έχει η εφαρμογή → gr-nomikos."
+ },
+ {
+  "name": "data-privacy-officer",
+  "dept": "legal",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "ΓΚΠΔ σε βάθος: αρχείο δραστηριοτήτων, εκτίμηση αντικτύπου (DPIA), διαχείριση παραβίασης, συμβάσεις με εκτελούντες. Μετά τον gr-nomikos, όταν χρειάζεται βάθος."
+ },
+ {
+  "name": "security-compliance-auditor",
+  "dept": "legal",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Πιστοποιήσεις SOC 2, ISO 27001, HIPAA, PCI-DSS: ετοιμότητα και στοιχεία. Μόνο όταν πελάτης ή συνεργάτης ζητά πιστοποίηση."
+ },
+ {
+  "name": "gr-logistis",
+  "dept": "finance",
+  "source": "gr",
+  "writes": false,
+  "model": "opus",
+  "desc": "Λογιστικά και φορολογικά θέματα μιας εφαρμογής ή επιχείρησης στην Ελλάδα (ΦΠΑ, παραστατικά, ηλεκτρονικά βιβλία/myDATA, παρακράτηση, μισθοδοσία ως ροή δεδομένων). Use PROACTIVELY όταν μια λειτουργία αγγίζει τιμολόγια, αποδείξεις, ποσά, ΦΠΑ, "
+ },
+ {
+  "name": "finance-bookkeeper-controller",
+  "dept": "finance",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Λογιστική ροή μέσα στην εφαρμογή: συμφωνίες, κλείσιμο μήνα, εσωτερικοί έλεγχοι, ίχνος ελέγχου. Για ελληνικό ΦΠΑ, παραστατικά και myDATA πρώτα ο gr-logistis."
+ },
+ {
+  "name": "finance-financial-analyst",
+  "dept": "finance",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Οικονομικό μοντέλο και σενάρια για μια απόφαση (αξίζει η λειτουργία, η επένδυση, η τιμή). Όχι για τη μηνιαία εικόνα (→ gr-oikonomikos-elegktis)."
+ },
+ {
+  "name": "finance-fpa-analyst",
+  "dept": "finance",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Προϋπολογισμός και απόκλιση πραγματικών από τον προϋπολογισμό ανά μήνα ή τρίμηνο, κυλιόμενη πρόβλεψη."
+ },
+ {
+  "name": "finance-tax-strategist",
+  "dept": "finance",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Φορολογικός σχεδιασμός σε πολλές χώρες (πωλήσεις στο εξωτερικό, ενδοομιλικές τιμές). Για Ελλάδα πρώτα ο gr-logistis."
+ },
+ {
+  "name": "chief-financial-officer",
+  "dept": "finance",
+  "source": "agency",
+  "writes": false,
+  "model": "opus",
+  "desc": "Μεγάλες οικονομικές αποφάσεις: κατανομή κεφαλαίων, χρηματοδότηση, ταμειακή ροή, επενδυτές. Όχι για καθημερινά λογιστικά (→ gr-logistis)."
+ },
+ {
+  "name": "gr-marketing",
+  "dept": "growth",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Διευθυντής marketing για την ελληνική αγορά. Σχεδιάζει θέση στην αγορά, μήνυμα, κανάλια (SEO, Google/Meta, social, email, συνεργασίες), ημερολόγιο περιεχομένου και προϋπολογισμό σε €, και ετοιμάζει προσχέδια για έγκριση. Use PROACTIVELY στη"
+ },
+ {
+  "name": "gr-poliseis",
+  "dept": "growth",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Υπεύθυνος πωλήσεων που κυνηγά πελάτες. Ορίζει τον ιδανικό πελάτη, βρίσκει υποψήφιους από δημόσιες πηγές, στήνει τη ροή πώλησης (επαφή, demo, προσφορά, κλείσιμο), γράφει προσχέδια μηνυμάτων και προσφορών και παρακολουθεί το pipeline. Use PRO"
+ },
+ {
+  "name": "marketing-content-creator",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Περιεχόμενο και ημερολόγιο δημοσιεύσεων για πολλά κανάλια, πάνω στο σχέδιο του gr-marketing. Μόνο προσχέδια για έγκριση."
+ },
+ {
+  "name": "marketing-seo-specialist",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert search engine optimization strategist specializing in technical SEO, content optimization, link authority building, and organic search growth. Drives sustainable traffic through data-driven search strategies."
+ },
+ {
+  "name": "marketing-aeo-foundations",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert in AI Engine Optimization infrastructure — implements llms.txt, AI-aware robots.txt, token-budgeted content, structured Markdown availability, and agent discovery files so AI crawlers, citation engines, and browsing agents can find, "
+ },
+ {
+  "name": "marketing-social-media-strategist",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert social media strategist for LinkedIn, Twitter, and professional platforms. Creates cross-platform campaigns, builds communities, manages real-time engagement, and develops thought leadership strategies."
+ },
+ {
+  "name": "marketing-instagram-curator",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert Instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization. Masters aesthetic development and drives meaningful engagement."
+ },
+ {
+  "name": "marketing-email-strategist",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation architecture, and deliverability. Designs sequences (welcome, nurture, reactivation, win-back, review, referral) grounded in 2025-2026 benchmarks"
+ },
+ {
+  "name": "marketing-growth-hacker",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Πειράματα απόκτησης χρηστών σε βάθος (χωνί, viral loops, γρήγορα τεστ). Το συνολικό σχέδιο marketing για την ελληνική αγορά το κάνει ο gr-marketing."
+ },
+ {
+  "name": "paid-media-ppc-strategist",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Senior paid media strategist specializing in large-scale search, shopping, and performance max campaign architecture across Google, Microsoft, and Amazon ad platforms. Designs account structures, budget allocation frameworks, and bidding st"
+ },
+ {
+  "name": "sales-proposal-strategist",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Προσφορά για συγκεκριμένο μεγάλο πελάτη ή διαγωνισμό (RFP): κεντρικό μήνυμα, θέση απέναντι στον ανταγωνισμό, σύνοψη. Για βάθος μετά τον gr-poliseis."
+ },
+ {
+  "name": "sales-discovery-coach",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Πώς στήνεται η πρώτη συζήτηση με υποψήφιο πελάτη (ερωτήσεις, ανάγκη, κενό). Για βάθος μετά τον gr-poliseis."
+ },
+ {
+  "name": "sales-pipeline-analyst",
+  "dept": "growth",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Διάγνωση pipeline από δεδομένα CRM (ταχύτητα, πρόβλεψη, πού κολλάνε οι συμφωνίες). Το κυνήγι πελατών το κάνει ο gr-poliseis· την εβδομαδιαία εικόνα ο gr-poliseis-pelates."
+ },
+ {
+  "name": "support-support-responder",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Απαντήσεις σε πελάτες και ροές υποστήριξης: πρότυπα απαντήσεων, κατηγοριοποίηση αιτημάτων, κλιμάκωση."
+ },
+ {
+  "name": "support-analytics-reporter",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Ανάλυση δεδομένων χρήσης σε δείκτες, πίνακες και στατιστικά. Όχι για μηνιαία οικονομικά (→ gr-oikonomikos-elegktis) ή πωλήσεις (→ gr-poliseis-pelates)."
+ },
+ {
+  "name": "support-infrastructure-maintainer",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management. Maintains robust, scalable infrastructure supporting business operations with security, performance, and cost eff"
+ },
+ {
+  "name": "support-executive-summary-generator",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Σύνοψη μίας σελίδας για απόφαση από πολλές αναφορές ή μεγάλο υλικό, όταν ο συντονιστής θέλει δεύτερη ματιά στη σύνθεση."
+ },
+ {
+  "name": "customer-success-manager",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Πελάτες που ήδη πληρώνουν: ενσωμάτωση, δείκτης υγείας πελάτη, πρόληψη αποχώρησης, ανανεώσεις."
+ },
+ {
+  "name": "operations-manager",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Επιχειρησιακές διαδικασίες εκτός κώδικα: ροές δουλειάς, προμηθευτές, χωρητικότητα, δείκτες λειτουργίας."
+ },
+ {
+  "name": "engineering-incident-response-commander",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert incident commander specializing in production incident management, structured response coordination, post-mortem facilitation, SLO/SLI tracking, and on-call process design for reliable engineering organizations."
+ },
+ {
+  "name": "engineering-sre",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Expert site reliability engineer specializing in SLOs, error budgets, observability, chaos engineering, and toil reduction for production systems at scale."
+ },
+ {
+  "name": "project-manager-senior",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Μετατρέπει εγκεκριμένο brief ή spec σε λίστα εργασιών με ρεαλιστικό εύρος, χωρίς να προσθέτει απαιτήσεις."
+ },
+ {
+  "name": "project-management-project-shepherd",
+  "dept": "ops",
+  "source": "agency",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Παρακολούθηση έργου με πολλά μέρη: χρονοδιάγραμμα, εξαρτήσεις, ποιος περιμένει ποιον, τι κόλλησε."
+ },
+ {
+  "name": "doc-updater",
+  "dept": "docs",
+  "source": "ecc",
+  "writes": true,
+  "model": "haiku",
+  "desc": "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Generates docs/CODEMAPS/*, updates READMEs and guides. Backs the /update-codemaps and /update-docs commands."
+ },
+ {
+  "name": "engineering-technical-writer",
+  "dept": "docs",
+  "source": "agency",
+  "writes": true,
+  "model": "haiku",
+  "desc": "Νέα τεκμηρίωση από το μηδέν: οδηγοί, αναφορά API, tutorials, README νέας εφαρμογής. Για ενημέρωση υπαρχόντων docs μετά από αλλαγή → doc-updater."
+ },
+ {
+  "name": "gr-epoptis-ygeias",
+  "dept": "monitor",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Εβδομαδιαίος έλεγχος υγείας μιας εφαρμογής (CI, ανοιχτά σφάλματα, PR που κόλλησαν, αποτυχίες deploy, εξαρτήσεις με γνωστά κενά, αρχεία καταγραφής αν δοθούν). Use PROACTIVELY σε προγραμματισμένη αναφορά ή όταν ο χρήστης ρωτά «πώς πάει η εφαρ"
+ },
+ {
+  "name": "gr-oikonomikos-elegktis",
+  "dept": "monitor",
+  "source": "gr",
+  "writes": false,
+  "model": "opus",
+  "desc": "Μηνιαία οικονομική εικόνα μιας εφαρμογής (έσοδα, συνδρομές, κόστος υποδομής και AI, κόστος ανθρώπων, περιθώριο, τάση) από στοιχεία που δίνει ο χρήστης ή ο συντονιστής. Use PROACTIVELY σε προγραμματισμένη μηνιαία αναφορά ή όταν ο χρήστης ρωτ"
+ },
+ {
+  "name": "gr-poliseis-pelates",
+  "dept": "monitor",
+  "source": "gr",
+  "writes": false,
+  "model": "sonnet",
+  "desc": "Εικόνα πωλήσεων και πελατών μιας εφαρμογής (νέοι πελάτες, αποχωρήσεις, δοκιμές που δεν έγιναν συνδρομές, τι ζητούν οι πελάτες, ποια λειτουργία να προστεθεί). Use PROACTIVELY σε προγραμματισμένη αναφορά ή όταν ο χρήστης ρωτά πώς πάνε οι πωλή"
+ }
+]
