@@ -1,0 +1,38 @@
+{
+  "name": "Όνομα εφαρμογής",
+  "stage": "ιδέα",
+  "stages_help": "ιδέα | μελέτη | ανάπτυξη | δοκιμή | κυκλοφορία | πωλήσεις | λειτουργία | πάγωμα",
+  "repo": "owner/repo",
+  "url_live": "",
+  "url_staging": "",
+  "owner": "",
+  "sources": {
+    "ci": "GitHub Actions του repo",
+    "errors": "",
+    "revenue": "",
+    "costs": "",
+    "customers": ""
+  },
+  "targets": {
+    "monthly_revenue_eur": null,
+    "monthly_cost_eur": null,
+    "paying_customers": null
+  },
+  "growth": {
+    "monthly_budget_eur": 0,
+    "budget_help": "Ό,τι έχει εγκρίνει ο χρήστης για marketing/πωλήσεις τον μήνα. 0 = κάθε έξοδο θέλει ρητό «ναι».",
+    "audience": "",
+    "channels": []
+  },
+  "communication": {
+    "summary": "εβδομαδιαία, Δευτέρα 09:00",
+    "summary_help": "ημερήσια | εβδομαδιαία | μόνο όταν υπάρχει κάτι",
+    "board": "μηνιαίο, 1η Δευτέρα του μήνα"
+  },
+  "reports": {
+    "gr-epoptis-ygeias": "εβδομαδιαία, Δευτέρα 08:00",
+    "gr-oikonomikos-elegktis": "μηνιαία, 1η του μήνα",
+    "gr-poliseis-pelates": "εβδομαδιαία, Παρασκευή 16:00",
+    "gr-anaptyxi": "μηνιαία, στο συμβούλιο"
+  }
+}
